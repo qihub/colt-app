@@ -1,0 +1,54 @@
+{
+    "countries":[
+        "country1",
+        "country2"
+    ],
+
+
+
+
+    "exception":{
+        "Italy":"<p>exception one list <br> exception one list exception one list exception one list</p>",
+        "Spain":"abither exception",
+        "Portugal":"Some more exception"
+    },
+
+
+    
+    "templates":{
+        "POP Verification between XNG and OHS":[
+            "Yes",
+            "No"
+        ],
+        "Service string validation with XNG routing":[
+            "Yes",
+            "No"
+        ],
+        "Circuit Status":[
+            "Yes",
+            "No"
+        ]
+    },
+    
+    
+    "technologies":{
+        "MMSP":[
+            "ero 1",
+            "ero 2",
+            "ero3"
+        ],
+        "MSP":[
+            "ero_2",
+            "ero_3",
+            "ero_4"
+        ],
+        "OFFNET":[
+            "data1",
+            "data2",
+            "data3"
+        ]
+    }
+
+
+    
+}
