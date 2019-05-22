@@ -44,12 +44,13 @@ $('#country_list').change(function(){
 $(document).on('change','#queues',function(){
 
     load_templates();
+    $('.validate_template').removeClass('d-none');
 
 });
 
 
 function load_templates(){
-
+    $('#templates').html('');
     $.get('data/'+data_path, function(data){
        
         if(server!=production){
@@ -121,6 +122,36 @@ function load_technologies(){
 }
 
 $(document).on('change','#technologies', function(){
+    $('#ero_lists').html('');
+    var technology =    $(this).val();
+    $.get('data/'+data_path, function(data){
+        if(server!=production){
+            
+            ero        =   JSON.parse(data);
+        }else{
+            ero        =   data
+
+        }
+
+        ero_list        =   ero.technologies[technology];
+           
+        ero_count       =   0;
+        tech_data       =   "";
+        for(var key in ero_list){
+            
+            tech_data   =   tech_data+
+                                "<input type='checkbox' name='ero_list[]' value='"
+                                +ero_list[key]
+                                +"'> "
+                                +ero_list[ero_count]+"<br>";
+
+                
+            ero_count++;
+        }
+        $('#ero_lists').append(tech_data);
+        $('.technology_validate').removeClass('d-none');
+
+    });
 
 });
 
