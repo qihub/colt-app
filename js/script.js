@@ -1,4 +1,6 @@
 var data_path = 'exceptions.json';
+var server       =   window.location.href;
+var production      =   "http://thedijje.com/colt-app/";
 
 $(document).ready(function(){
    //load_templates();
@@ -14,8 +16,16 @@ $('#country_list').change(function(){
     
     $.get('data/'+data_path, function(data){
        
+        if(server!=production){
+
+            exceptions      =   JSON.parse(data);
+
+        }else{
+
+            exceptions      =   data;
         
-        exceptions      =   JSON.parse(data)
+        }
+
         country_exception   =   exceptions.exception[country_name];
         if(!country_exception || country_exception==''){
             //alert('No Exception found in country '+country_name);
@@ -42,8 +52,13 @@ function load_templates(){
 
     $.get('data/'+data_path, function(data){
        
+        if(server!=production){
+            template_data      =   JSON.parse(data);
+        }else{
+            template_data      =   data;
+        }
+       
         
-        template_data      =   JSON.parse(data)
         templates       =   template_data.templates;
         template_count  =   0;
         for(var key in templates){
@@ -85,7 +100,13 @@ $(document).on('click','.validate_template',function(){
 function load_technologies(){
     
     $.get('data/'+data_path, function(data){
-        technologies        =   JSON.parse(data)
+        if(server!=production){
+            
+            technologies        =   JSON.parse(data);
+        }else{
+            technologies        =   data
+
+        }
         technology_list     =   technologies.technologies;
         
         for(var key in technology_list){
