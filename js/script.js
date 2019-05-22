@@ -15,7 +15,7 @@ $('#country_list').change(function(){
     $.get('data/'+data_path, function(data){
        
         
-        exceptions      =   JSON.parse(data)
+        exceptions      =   data;
         country_exception   =   exceptions.exception[country_name];
         if(!country_exception || country_exception==''){
             //alert('No Exception found in country '+country_name);
