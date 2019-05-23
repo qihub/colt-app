@@ -5,6 +5,7 @@ var production      =   "http://thedijje.com/colt-app/";
 $(document).ready(function(){
    //load_templates();
    load_technologies();
+   load_contacts();
 });
 
 
@@ -59,8 +60,15 @@ function load_templates(){
             template_data      =   data;
         }
        
+        create_template(template_data);
         
-        templates       =   template_data.templates;
+    });
+
+    show_templates();
+}
+
+function create_template(template_data){
+    templates       =   template_data.templates;
         template_count  =   0;
         for(var key in templates){
             if(templates.hasOwnProperty(key)){
@@ -70,25 +78,29 @@ function load_templates(){
                 
                 for(var options in option_lists){
 
-                    input_forms =   input_forms+" <input type='radio' name='template_"+template_count+"'> "+option_lists[options]
+                    input_forms =   input_forms+" <input type='radio' value='"+option_lists[options]+"' class='template' onChange='generate_template(this)' name='template_"+template_count+"'> "+option_lists[options]
                 }
                 
                 html_data   =   '<div class="form-group">'+
-                '<label>'+key+'</label>'+
+                '<label class="template_name template_'+template_count+'">'+key+'</label>'+
                 '<br> '+input_forms+
                 '</div>';
                 $('#templates').append(html_data);
                 template_count  =   template_count+1;
             }
         }
+}
 
-       
-       
+function generate_template(element){
 
-    });
+    el_name = $(element).attr('name');
+    text_data    =   $('.'+el_name).text();
+    el_selection    =   $('input[name="'+el_name+'"]:checked').val();
+    //alert(el_selection);
 
-    show_templates();
-    
+    $('#final_template').append(text_data+" : "+el_selection+"\n");
+
+
 
 }
 
@@ -157,4 +169,31 @@ $(document).on('change','#technologies', function(){
 
 function show_templates(){
     $('.templates_body').removeClass('d-none');
+}
+
+
+function load_contacts(){
+    $('#contact_list_data').html("");
+    $.get('data/'+data_path, function(data){
+        if(server!=production){
+            
+            json_data        =   JSON.parse(data);
+        }else{
+            json_data        =   data
+
+        }
+
+        contacts_data           =   json_data.contact_list;
+
+        for(var key in contacts_data){
+            console.log(contacts_data[key]);
+            
+            
+            $('#contact_list_data').append("<p><i class='fa fa-user fa-fw'></i> "+contacts_data[key]);
+
+                
+           
+        }
+        
+    });
 }
