@@ -92,6 +92,29 @@ $(document).on('change','#queues',function(){
 });
 
 
+function load_ero_type(){
+    $('#ero_type').html('<option selected disabled>Please select ERO type</option>');
+
+    $.get('data/'+data_path, function(data){
+       
+        if(server!=production){
+            ero_data      =   JSON.parse(data);
+        }else{
+            ero_data      =   data;
+        }
+       
+        eros   =   ero_data.ero_codes;
+        
+        for(var key in eros){
+
+            $('#ero_type').append('<option>'+eros[key]+'</option>');
+          
+        }
+        
+    });
+}
+
+
 function load_templates(){
     $('#templates').html('');
     $.get('data/'+data_path, function(data){
@@ -193,6 +216,7 @@ $(document).on('change','#technologies', function(){
            
        fetch_technology(ero_list);
        fetch_ero_code(ero_codes);
+       load_ero_type();
 
     });
 
@@ -232,7 +256,7 @@ function fetch_technology(){
         ero_count++;
     }
     $('#ero_lists').append(tech_data);
-    $('.technology_validate').removeClass('d-none');
+    
 }
 
 function show_templates(){
@@ -265,3 +289,23 @@ function load_contacts(){
         
     });
 }
+
+
+
+
+function validate_tech(){
+    $('.technology_validate').removeClass('d-none');
+}
+
+
+
+$(document).on('click','.clear_tech', function (){
+
+
+    if(!confirm('Are you sure?')){
+        return false;
+    }
+
+    $('#technology_ero').val('');
+
+})

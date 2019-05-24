@@ -229,13 +229,13 @@
 									<div class="form-group">
 										<label for="">ERO type</label>
 										<select name="ero_type" class="form-control" id="ero_type">
-											<option selected disabled></option>
+											<option selected disabled>Select ERO code</option>
 										</select>
 									</div>
 
 									<div class="form-input">
 										<label for="">Enter ERO ID</label>
-										<input type="text" name="ero_id" id="ero_generated_id" class="form-control">
+										<input type="text" name="ero_id" id="ero_generated_id" class="form-control" placeholder="Enter ERO ID">
 									</div>
 									<hr>
 									<div class="form-group" id="ero_lists">
@@ -247,8 +247,13 @@
 										</button>
 									</div>
 
-									<div class="form-group technology_validate d-none">
+									<div class="form-group technology_validate">
 										<textarea name="" id="technology_ero" class="form-control"></textarea>
+										<p>
+											<small>
+												<a href="javascript:voice" class="clear_tech"><i class="text-danger fa fa-times-circle"></i> Clear</a>
+											</small>
+										</p>
 									</div>
 
 								</div>
