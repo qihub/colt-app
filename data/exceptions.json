@@ -6,6 +6,13 @@
 
 
 
+    "queues":[
+        "queues 1",
+        "queues 2",
+        "queues 3",
+        "queues 4"
+    ],
+
 
     "exception":{
         "Italy":"<p>exception one list <br> exception one list exception one list exception one list</p>",
@@ -50,6 +57,12 @@
     },
     "contact_list":[
         "alok@colt.net"
+    ],
+
+    "ero_codes":[
+        "A-END",
+        "B-END",
+        "Transit"
     ]
 
 

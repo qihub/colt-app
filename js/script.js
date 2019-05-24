@@ -6,6 +6,8 @@ $(document).ready(function(){
    //load_templates();
    load_technologies();
    load_contacts();
+   load_countries();
+   load_queues();
 });
 
 
@@ -41,6 +43,46 @@ $('#country_list').change(function(){
     
 
 });
+
+function load_queues(){
+    $.get('data/'+data_path, function(data){
+       
+        if(server!=production){
+            template_data      =   JSON.parse(data);
+        }else{
+            template_data      =   data;
+        }
+       
+        queues   =   template_data.queues;
+        
+        for(var key in queues){
+
+            $('#queues').append('<option>'+queues[key]+'</option>')
+          
+        }
+        
+    });
+}
+
+function load_countries(){
+    $.get('data/'+data_path, function(data){
+       
+        if(server!=production){
+            template_data      =   JSON.parse(data);
+        }else{
+            template_data      =   data;
+        }
+       
+        countries   =   template_data.countries;
+        
+        for(var country in countries){
+
+            $('#country_list').append('<option>'+countries[country]+'</option>')
+          
+        }
+        
+    });
+}
 
 $(document).on('change','#queues',function(){
 
@@ -146,26 +188,52 @@ $(document).on('change','#technologies', function(){
         }
 
         ero_list        =   ero.technologies[technology];
+        ero_codes       =   ero.ero_codes;
+       
            
-        ero_count       =   0;
-        tech_data       =   "";
-        for(var key in ero_list){
-            
-            tech_data   =   tech_data+
-                                "<input type='checkbox' name='ero_list[]' value='"
-                                +ero_list[key]
-                                +"'> "
-                                +ero_list[ero_count]+"<br>";
-
-                
-            ero_count++;
-        }
-        $('#ero_lists').append(tech_data);
-        $('.technology_validate').removeClass('d-none');
+       fetch_technology(ero_list);
+       fetch_ero_code(ero_codes);
 
     });
 
 });
+
+function fetch_ero_code(ero_list){
+    
+    ero_count       =   0;
+    tech_data       =   "";
+    for(var key in ero_list){
+        
+        tech_data   =   tech_data+
+                            "<input type='checkbox' name='ero_list[]' value='"
+                            +ero_list[key]
+                            +"'> "
+                            +ero_list[ero_count]+"<br>";
+
+            
+        ero_count++;
+    }
+    $('#ero_type').append(tech_data);
+
+}
+
+function fetch_technology(){
+    ero_count       =   0;
+    tech_data       =   "";
+    for(var key in ero_list){
+        
+        tech_data   =   tech_data+
+                            "<input type='checkbox' name='ero_list[]' value='"
+                            +ero_list[key]
+                            +"'> "
+                            +ero_list[ero_count]+"<br>";
+
+            
+        ero_count++;
+    }
+    $('#ero_lists').append(tech_data);
+    $('.technology_validate').removeClass('d-none');
+}
 
 function show_templates(){
     $('.templates_body').removeClass('d-none');

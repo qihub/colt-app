@@ -54,11 +54,7 @@
 					<label for="">Select country</label>
 					<select name="" id="country_list" class="form-control">
 						<option selected disabled>Select a country</option>
-						<option>Italy</option>
-						<option>Spain</option>
-						<option>Portugal</option>
-						<option>USA</option>
-						<option>Sweden</option>
+						
 					</select>
 				</div>
 
@@ -66,10 +62,7 @@
 					<label for="">Queue</label>
 					<select name="queue" id="queues" class="form-control">
 						<option value="0" selected disabled>Select queue</option>
-						<option value="1">Queue 1</option>
-						<option value="1">Queue 1</option>
-						<option value="1">Queue 1</option>
-						<option value="1">Queue 1</option>
+						
 					</select>
 				</div>
 			</li>
@@ -153,7 +146,7 @@
 					<div class="row">
 
 						<!-- Area Chart -->
-						<div class="col-xl-8 col-lg-7">
+						<div class="col-lg-6">
 							<div class="card shadow mb-4">
 								<!-- Card Header - Dropdown -->
 								<div
@@ -186,7 +179,7 @@
 						</div>
 
 						<!-- Pie Chart -->
-						<div class="col-xl-4 col-lg-5">
+						<div class="col-lg-6">
 
 						<div class="card shadow mb-4">
 								<!-- Card Header - Dropdown -->
@@ -233,6 +226,18 @@
 										</select>
 									</div>
 
+									<div class="form-group">
+										<label for="">ERO type</label>
+										<select name="ero_type" class="form-control" id="ero_type">
+											<option selected disabled></option>
+										</select>
+									</div>
+
+									<div class="form-input">
+										<label for="">Enter ERO ID</label>
+										<input type="text" name="ero_id" id="ero_generated_id" class="form-control">
+									</div>
+									<hr>
 									<div class="form-group" id="ero_lists">
 
 									</div>
