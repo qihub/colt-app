@@ -9,17 +9,25 @@
 
 
     "queues":[
-        "queues 1",
-        "queues 2",
-        "queues 3",
-        "queues 4"
+        "BDW ROUT/MSPR",
+        "BDW PLAN",
+        "BDW CNFG"
     ],
 
 
     "exception":{
-        "Italy":"<p>exception one list <br> exception one list exception one list exception one list</p>",
-        "Spain":"abither exception",
-        "Portugal":"Some more exception"
+        "Italy":
+        "Always remove DDF coming in CEOS in case of lease Line and take mux from that site ( prefer nortel in case of Link)<br>\tMax allow rate is 3072 while configuring ULL services<br> If OLO coming on Telecom Italia Co-Location site then don\u2019t install DD and push it to CSP.<br> Customer Site( Cust private\/Offnet Cust)- ERO of MILAN\/ROM in Colt Milan Valtelina , Colt ROM Valentina.<br> MILAN \/ Rome Node Site ERO- To be raised in Milan  ROM.<br> CSD to be set in Offnet services as per transition document.<br> For 1G and 10 G EoFibre we need to push to TSP for node ODF cabling and Management circuit cabling.<br> Fast web Always deliver Optical interface at Colt Pop and also at Customer Handover Point . So if customer is requesting Electrical Interface as handover , So in that case we had to Plan Demarcation Device by default which will act as convertor to covert the signal from Optical to electrical.<br> if OLO provide is ORALA than plan D.D. by default.<br> Internal orders in Italy is in scope of india now except planning on CH site.<br> BDWREVW is in our scope.",
+        
+        "Spain":
+        "Whichever planning task for \u201COff net\u201D circuits for every Product Type and Access Technology will be fully owned by SSC-India.\r\nFully ownership in India for EPN orders, including all Service(TLS engine creation), Primary Site and Secondary sites, and also for all Product Types (Voice orders over EPN will be actioned by SSC-India)\r\nNew\/Mod Colt for Internal Use Orders, such as Core Projects, new bearers at Nodes, cabling, migrations, etc\u2026 to keep in Local. Exception are internal order for EQR or Rack recovery.\r\nCustomer orders with Bespokes\/special projects related tasks to will continue keeping at local ownership.\r\nNew Orders \u201COn Net\u201D with Site Type: New Pop\/Build Planning+Routing (Creation of elements in XNG and end tasks with routing) will be transferred to SSC INDIA, for all Product Types and Access Technologies. Local BDW Team willm be responsible for providing fuul details on Site Design, including type of Cabinet, technology, longlining, power, diversity, fibre ring, etc.\r\nWhen a OnNet Exististing Site requires New Ring due to Capacity issue or unavailibilty of required technology, corresponding WI will be sent to CSPPLAN where Local Team will take ownership for design.",
+        
+        "Portugal":
+        "No CSD in case of ERO\r\nEofibre and services greater than 1 Gbps is in scope of local team",
+        
+        
+        "USA":
+        "While planning new overture always raise extra cable ERO 199-06050.\r\nPlease raise an ERO at SDA1701002."
     },
 
 
