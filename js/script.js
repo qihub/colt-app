@@ -291,12 +291,9 @@ function load_contacts(){
 }
 
 
-
-
 function validate_tech(){
     $('.technology_validate').removeClass('d-none');
 }
-
 
 
 $(document).on('click','.clear_tech', function (){
