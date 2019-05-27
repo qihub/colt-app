@@ -8,6 +8,7 @@ $(document).ready(function(){
    load_contacts();
    load_countries();
    load_queues();
+   console.warn('Powerd by @thedijje');
 });
 
 
@@ -278,7 +279,7 @@ function load_contacts(){
         contacts_data           =   json_data.contact_list;
 
         for(var key in contacts_data){
-            console.log(contacts_data[key]);
+            
             
             
             $('#contact_list_data').append("<p><i class='fa fa-user fa-fw'></i> "+contacts_data[key]);

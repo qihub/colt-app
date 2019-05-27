@@ -201,15 +201,15 @@
 								<!-- Card Header - Dropdown -->
 								<div
 									class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-									<h6 class="m-0 font-weight-bold text-primary">Technologies/ERO</h6>
+									<h6 class="m-0 font-weight-bold text-primary">Technology/ERO</h6>
 
 								</div>
 								<!-- Card Body -->
 								<div class="card-body">
 									<div class="form-group">
-										<label for="">Technologies</label>
+										<label for="">Technology</label>
 										<select name="" id="technologies" class="form-control">
-											<option selected disabled>Select tenology</option>
+											<option selected disabled>Select Technology</option>
 										</select>
 									</div>
 
@@ -236,10 +236,16 @@
 
 									<div class="form-group technology_validate">
 										<textarea name="" id="technology_ero" class="form-control"></textarea>
+										<div class="clearfix"></div>
 										<p>
 											<small>
 												<a href="javascript:voice" class="clear_tech"><i class="text-danger fa fa-times-circle"></i> Clear</a>
 											</small>
+											<span class="float-right">
+												<button class="btn btn-primary" data-clipboard-target="#technology_ero">
+													<i class="fa fa-clipboard"></i> Copy to clipboard
+												</button>
+											</span>
 										</p>
 									</div>
 
