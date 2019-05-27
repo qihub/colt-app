@@ -217,20 +217,25 @@
 
 									</div>
 									<div class="form-group">
-										<button class="btn btn-primary technology_validate d-none">
+										<button class="btn btn-primary technology_validate">
 											<i class="fa fa-check"></i> Validate
 										</button>
-									</div>
 
-									<div class="form-group technology_validate">
-										<textarea name="" id="technology_ero" class="form-control"></textarea>
+										<button class="btn btn-default technology_validate_cancel">
+												<i class="fa fa-times"></i> Cancel
+										</button>
+									</div>
+									
+									<div class="form-group tech_validate d-none ">
+										<textarea name="" rows="5" id="technology_ero" class="form-control"></textarea>
 										<div class="clearfix"></div>
+										<hr>
 										<p>
 											<small>
 												<a href="javascript:voice" class="clear_tech"><i class="text-danger fa fa-times-circle"></i> Clear</a>
 											</small>
 											<span class="float-right">
-												<button class="btn btn-primary" data-clipboard-target="#technology_ero">
+												<button class="btn btn-primary btn-sm" data-clipboard-target="#technology_ero">
 													<i class="fa fa-clipboard"></i> Copy to clipboard
 												</button>
 											</span>

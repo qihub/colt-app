@@ -230,11 +230,14 @@ $(document).on('change','#technologies', function(){
 
 });
 
-function write_ero(element){
-    
-    $('#technology_ero').val($(element).val());
-        
+
+function selected_ero(element){
+    console.log(element);
+    technology_ero  =   $('#technology_ero').val()+$(element).val()+'\n';
+    $('#technology_ero').val(technology_ero);
+
 }
+
 
 function fetch_ero_code(ero_list){
     clear_field('technology_ero');
@@ -262,14 +265,17 @@ function fetch_technology(){
     for(var key in ero_list){
         
         tech_data   =   tech_data+
-                            "<input type='checkbox' class='ero_checklist' name='ero_list[]' value='"
+                            "<input type='checkbox' class='ero_checklist' onClick='selected_ero(this)' name='ero_list[]' value='"
                             +ero_list[key]
                             +"'> "
                             +ero_list[ero_count]+"<br>";
 
             
         ero_count++;
+
     }
+    tech_data   =   tech_data+
+                            "<input type='checkbox' class='ero_checklist' onClick='selected_ero(this)' name='ero_list[]' value='N/A'> N/A";
     $('#ero_lists').append(tech_data);
     
 }
@@ -323,5 +329,22 @@ $(document).on('click','.clear_tech', function (){
 });
 
 function clear_field(text_area){
+    $('document input[type="checkbox"]').prop("checked", false);
     $('#'+text_area).val('');
 }
+
+
+$('.technology_validate').click(function(){
+
+    $('.tech_validate').removeClass('d-none');
+
+});
+
+$('.technology_validate_cancel').click(function(){
+    if(!confirm('Are you sure you want to clear?')){
+        return false;
+    }
+    $('.tech_validate').addClass('d-none');
+    clear_field('technology_ero');
+    $('input[type="checkbox"]').prop("checked", false);
+});
