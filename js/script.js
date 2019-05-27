@@ -38,7 +38,14 @@ $('#country_list').change(function(){
             );
             return false;
         }
-        $('#exception_data').html(country_exception);
+        $('#exception_data').html("");
+        for(var key in country_exception){
+
+            $('#exception_data').append('<li>'+country_exception[key]+'</li>')
+          
+        }
+
+        
     });
     
     
