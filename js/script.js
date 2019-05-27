@@ -164,18 +164,18 @@ function create_template(template_data){
         }
 }
 
-function generate_template(element){
+function generate_template(element, target='final_template'){
 
     el_name = $(element).attr('name');
     text_data    =   $('.'+el_name).text();
     el_selection    =   $('input[name="'+el_name+'"]:checked').val();
     //alert(el_selection);
 
-    $('#final_template').append(text_data+" : "+el_selection+"\n");
-
-
+    $('#'+target).append(text_data+" : "+el_selection+"\n");
 
 }
+
+
 
 $(document).on('click','.validate_template',function(){
 
@@ -230,14 +230,21 @@ $(document).on('change','#technologies', function(){
 
 });
 
+function write_ero(element){
+    
+    $('#technology_ero').val($(element).val());
+        
+}
+
 function fetch_ero_code(ero_list){
+    clear_field('technology_ero');
     
     ero_count       =   0;
     tech_data       =   "";
     for(var key in ero_list){
         
         tech_data   =   tech_data+
-                            "<input type='checkbox' name='ero_list[]' value='"
+                            "<input type='checkbox' name='ero_list' onclick='write_ero(this)' class='ero_checklist' value='"
                             +ero_list[key]
                             +"'> "
                             +ero_list[ero_count]+"<br>";
@@ -255,7 +262,7 @@ function fetch_technology(){
     for(var key in ero_list){
         
         tech_data   =   tech_data+
-                            "<input type='checkbox' name='ero_list[]' value='"
+                            "<input type='checkbox' class='ero_checklist' name='ero_list[]' value='"
                             +ero_list[key]
                             +"'> "
                             +ero_list[ero_count]+"<br>";
@@ -313,4 +320,8 @@ $(document).on('click','.clear_tech', function (){
 
     $('#technology_ero').val('');
 
-})
+});
+
+function clear_field(text_area){
+    $('#'+text_area).val('');
+}
