@@ -1,18 +1,85 @@
-var data_path   = 'exceptions.json';
-var server      =   window.location.href;
-var production  =   "https://thedijje.com/colt-app/";
-var logo_link   =   "https://www.colt.net/wp-content/uploads/2019/01/cropped-Favicon-512-192x192.png";
+data_path   = 'exceptions.json';
+server      =   window.location.href;
+production  =   "https://thedijje.com/colt-app/";
+logo_link   =   "https://www.colt.net/wp-content/uploads/2019/01/cropped-Favicon-512-192x192.png";
+;
+var json_data   = fetch_data();
+
 
 
 $(document).ready(function(){
-   //load_templates();
-   load_technologies();
-   load_contacts();
-   load_countries();
-   load_queues();
-   console.warn('Powerd by @thedijje');
+    //load_templates();
+    load_countries();
+
+    //console.warn('Powerd by @thedijje');
+    
+    load_technologies();
+    //load_contacts();
+    load_queues();
+    
+ });
+
+function fetch_data(){
+    
+    $.ajax({
+        url: 'data/'+data_path,
+        type: 'get',
+        async: false,
+        success: function(data) {
+            result = data;
+        } 
+     });
+
+    if(server!=production){
+
+        data_file      =   JSON.parse(result);
+
+    }else{
+
+        data_file      =   result;
+    
+    }
+
+    return data_file;
+
+};
+
+countries   =   function(){
+
+}
+
+$(document).on('change','#queue_type', function(){
+
+    selected_queue_type     =   $('#queue_type').val();
+    selected_queue          =   $('#queues').val();
+
+    template_data   =   json_data.queues[selected_queue][selected_queue_type].template;
+    //console.log(template_data);
+    input_form              =   "";
+    template_form_element   =   "";
+    t_count           = 0;
+    for( var key in template_data){
+        
+        template_options  =  template_data[key]; 
+        
+        for(var option in template_options){
+            input_form        = input_form + "<input onChange='generate_template(this)' class='template' type='radio' name='template_option_"+t_count+"' value='" +template_options[option]+ "'> "+template_options[option]+" ";
+            
+        }
+        
+        template_form_element   =   "<div class='form-group'> <label class='template_option_"+t_count+"'>"+key+"</label><br>"+input_form+"</div>";
+        $('#templates').append(template_form_element);
+        input_form  =   "";
+        t_count =   t_count+1;
+    }
+    
 
 });
+
+
+
+
+
 
 $(document).on('click','.template_clear', function(){
 
@@ -68,90 +135,70 @@ $('#country_list').change(function(){
 });
 
 function load_queues(){
-    $.get('data/'+data_path, function(data){
-       
-        if(server!=production){
-            template_data      =   JSON.parse(data);
-        }else{
-            template_data      =   data;
-        }
-       
-        queues   =   template_data.queues;
+   
+    queues   =   json_data.queues;
         
-        for(var key in queues){
+    for(var key in queues){
 
-            $('#queues').append('<option>'+queues[key]+'</option>')
-          
-        }
-        
-    });
+        $('#queues').append('<option>'+key+'</option>')
+      
+    }
 }
 
 function load_countries(){
-    $.get('data/'+data_path, function(data){
-       
-        if(server!=production){
-            template_data      =   JSON.parse(data);
-        }else{
-            template_data      =   data;
-        }
-       
-        countries   =   template_data.countries;
-        
-        for(var country in countries){
+    country_data   =   json_data.countries;
+    console.log(country_data);
 
-            $('#country_list').append('<option>'+countries[country]+'</option>')
-          
-        }
-        
-    });
+    for(var country in country_data){
+
+        $('#country_list').append('<option>'+country+'</option>')
+      
+    }
 }
 
 $(document).on('change','#queues',function(){
-
+    load_queue_type();
     load_templates();
     $('.validate_template').removeClass('d-none');
 
 });
 
 
+
+function load_queue_type(){
+
+    selected_queue =    $('#queues').val();
+    $('#queue_type').html('');
+
+    queues  =   json_data.queues[selected_queue];
+    
+    $('#queue_type').append('<option selected disabled> Select type</option>');
+
+    for(var list in queues){
+        
+        $('#queue_type').append('<option>'+list+'</option>');
+      
+    }
+
+}
+
 function load_ero_type(){
     $('#ero_type').html('<option selected disabled>Please select ERO type</option>');
 
-    $.get('data/'+data_path, function(data){
-       
-        if(server!=production){
-            ero_data      =   JSON.parse(data);
-        }else{
-            ero_data      =   data;
-        }
-       
-        eros   =   ero_data.ero_codes;
+    eros   =   json_data.ero_codes;
         
-        for(var key in eros){
+    for(var key in eros){
 
-            $('#ero_type').append('<option>'+eros[key]+'</option>');
-          
-        }
-        
-    });
+        $('#ero_type').append('<option>'+eros[key]+'</option>');
+      
+    }
 }
 
 
 function load_templates(){
     $('#templates').html('');
-    $.get('data/'+data_path, function(data){
-       
-        if(server!=production){
-            template_data      =   JSON.parse(data);
-        }else{
-            template_data      =   data;
-        }
-       
-        create_template(template_data);
-        
-    });
-
+    template_data   =   json_data;
+    create_template(template_data);
     show_templates();
 }
 
@@ -200,25 +247,16 @@ $(document).on('click','.validate_template',function(){
 
 function load_technologies(){
     
-    $.get('data/'+data_path, function(data){
-        if(server!=production){
-            
-            technologies        =   JSON.parse(data);
-        }else{
-            technologies        =   data
-
+    technology_list     =   json_data.technologies;
+    
+    for(var key in technology_list){
+        if(technology_list.hasOwnProperty(key)){
+            tech_data   =   "<option>"+key+"</option>";
+            $('#technologies').append(tech_data);
         }
-        technology_list     =   technologies.technologies;
         
-        for(var key in technology_list){
-            if(technology_list.hasOwnProperty(key)){
-                tech_data   =   "<option>"+key+"</option>";
-                $('#technologies').append(tech_data);
-            }
-            
-        }
+    }
 
-    });
 }
 
 $(document).on('change','#technologies', function(){
