@@ -77,10 +77,6 @@ $(document).on('change','#queue_type', function(){
 });
 
 
-
-
-
-
 $(document).on('click','.template_clear', function(){
 
     if(!confirm('Are you sure?')){
@@ -95,44 +91,32 @@ $(document).on('click','.template_clear', function(){
 
 
 $('#country_list').change(function(){
-    $('#exception_data').html(
-        '<i class="fa fa-spinner fa-pulse"></i> Loading..'
-    );
-    country_name     =   $(this).val();
-    
-    $.get('data/'+data_path, function(data){
-       
-        if(server!=production){
 
-            exceptions      =   JSON.parse(data);
-
-        }else{
-
-            exceptions      =   data;
-        
-        }
-
-        country_exception   =   exceptions.exception[country_name];
-        if(!country_exception || country_exception==''){
-            //alert('No Exception found in country '+country_name);
-            $('#exception_data').html(
-                '<span class="text-danger"><i class="fa fa-times-circle"></i> No exception found</span>'
-            );
-            return false;
-        }
-        $('#exception_data').html("");
-        for(var key in country_exception){
-
-            $('#exception_data').append('<li>'+country_exception[key]+'</li>')
-          
-        }
-
-        
-    });
-    
-    
+    fetch_delivery_address();
+    fetch_exceptions();
 
 });
+
+
+function fetch_delivery_address(){
+    $('#delivery_list').html('');
+    $('.delivery_c_heading').text('');
+    selected_country    =   $('#country_list').val();
+    address             =   json_data.countries[selected_country];
+    
+    $('.delivery_c_heading').html(': '+selected_country);
+    if(address.delivery_address){
+        country_delivery    =   address.delivery_address;
+
+        for(i in country_delivery){
+            $('#delivery_list').append(country_delivery[i]+"<br>");
+        }
+
+    }
+    
+    
+
+}
 
 function load_queues(){
    
