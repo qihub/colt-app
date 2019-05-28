@@ -17,26 +17,27 @@
 
     "exception":{
         "Italy":[
-            "exception 1",
-            "exception 2",
-            "exception 3"
+            "Always remove DDF coming in CEOS in case of lease Line and take mux from that site ( prefer nortel in case of Link)",
+            "Max allow rate is 3072 while configuring ULL services",
+            "If OLO coming on Telecom Italia Co-Location site then don’t install DD and push it to CSP."
         ],
         
         "Spain":[
-            "spain exception",
-            "spain exception 2",
-            "spain exception 3"
+            "Ceases/Cancellations. For every Order Type CEASE and CANCEL, remaing tasks still doing locally are transitioned to SSC-India without Exception",
+            "Tasks related to orders for Equipment/Rack Recovery, usually after Cease All or Internal order (following of current Harmonized Cease Process) are fully transferred to SSC-India.",
+            "Trigger “Node Work Required”: - If last MUX in ring , If last customer circuit in node bearer (not LDN bearer) terminates the circuit in an ISC, COLO and Subnode terminates the circuit in a Node if the circuit contains a CTP in a Node.",
+            "Trigger “CSP In-house Cabling”: should never be triggered."
         ],
         
         "Portugal":[
-            "greek exception 1",
-            "greek exception 2"
+            "No CSD in case of ERO",
+            "Eofibre and services greater than 1 Gbps is in scope of local team"
         ],
         
         
         "USA":[
-            "US exception 1",
-            "US exception 2"
+            "While planning new overture always raise extra cable ERO 199-06050.",
+            "Please raise an ERO at SDA1701002."
         ]
         },
 

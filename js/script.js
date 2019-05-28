@@ -1,6 +1,8 @@
-var data_path = 'exceptions.json';
-var server       =   window.location.href;
-var production      =   "http://thedijje.com/colt-app/";
+var data_path   = 'exceptions.json';
+var server      =   window.location.href;
+var production  =   "https://thedijje.com/colt-app/";
+var logo_link   =   "https://www.colt.net/wp-content/uploads/2019/01/cropped-Favicon-512-192x192.png";
+
 
 $(document).ready(function(){
    //load_templates();
@@ -9,6 +11,19 @@ $(document).ready(function(){
    load_countries();
    load_queues();
    console.warn('Powerd by @thedijje');
+
+});
+
+$(document).on('click','.template_clear', function(){
+
+    if(!confirm('Are you sure?')){
+        return false;
+    }
+
+    $('#final_template').val('');
+    $('.copy_section').addClass('d-none');
+
+
 });
 
 
@@ -341,7 +356,7 @@ $('.technology_validate').click(function(){
 });
 
 $('.technology_validate_cancel').click(function(){
-    if(!confirm('Are you sure you want to clear?')){
+    if(!confirm('Are you sure you want to reset and clear?')){
         return false;
     }
     $('.tech_validate').addClass('d-none');
