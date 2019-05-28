@@ -1,62 +1,119 @@
 {
-    "countries":[
-        "Italy",
-        "Spain",
-        "Portugal",
-        "USA"
-    ],
-
-
-
-    "queues":[
-        "BDW ROUT/MSPR",
-        "BDW PLAN",
-        "BDW CNFG"
-    ],
-
-
-    "exception":{
-        "Italy":[
-            "Always remove DDF coming in CEOS in case of lease Line and take mux from that site ( prefer nortel in case of Link)",
-            "Max allow rate is 3072 while configuring ULL services",
-            "If OLO coming on Telecom Italia Co-Location site then don’t install DD and push it to CSP."
-        ],
-        
-        "Spain":[
-            "Ceases/Cancellations. For every Order Type CEASE and CANCEL, remaing tasks still doing locally are transitioned to SSC-India without Exception",
-            "Tasks related to orders for Equipment/Rack Recovery, usually after Cease All or Internal order (following of current Harmonized Cease Process) are fully transferred to SSC-India.",
-            "Trigger “Node Work Required”: - If last MUX in ring , If last customer circuit in node bearer (not LDN bearer) terminates the circuit in an ISC, COLO and Subnode terminates the circuit in a Node if the circuit contains a CTP in a Node.",
-            "Trigger “CSP In-house Cabling”: should never be triggered."
-        ],
-        
-        "Portugal":[
-            "No CSD in case of ERO",
-            "Eofibre and services greater than 1 Gbps is in scope of local team"
-        ],
-        
-        
-        "USA":[
-            "While planning new overture always raise extra cable ERO 199-06050.",
-            "Please raise an ERO at SDA1701002."
-        ]
+    "queues":{
+        "BDW ROUT/MSPR":{
+            "new":{
+                "template":
+                {
+                    "BDW: ROUTE/MSP":[],
+                    "POP Verification between XNG and OHS":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Service string validation with XNG routing":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Circuit Status":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Delivery Over IQ-Packet (NGN)":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Node work":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Order Eligible for EED (Ethernet Express Delivery)":[
+                        "Yes",
+                        "No"
+                    ]
+                }
+            },
+            "Cease":{
+                "template":{
+                    
+                }
+            }
         },
-
-
-    
-    "templates":{
-        "POP Verification between XNG and OHS":[
-            "Yes",
-            "No"
-        ],
-        "Service string validation with XNG routing":[
-            "Yes",
-            "No"
-        ],
-        "Circuit Status":[
-            "Yes",
-            "No"
-        ]
+        "BDW PLAN":{
+            "new":{
+                "template":{
+                    "BDWPLAN":[
+                        "A End",
+                        "B End"
+                    ],
+                    "XNG Planning Done:":[
+                        "Done"
+                    ],
+                    "Ring defined":[
+                        "ER-xxxxxxx"
+                    ],
+                    "Circuit Status":[
+                        "Virtual",
+                        "Ordered"
+                    ]
+                }
+            },
+            "Cease":{
+                "template":{
+                    
+                }
+            }
+        }
+        
     },
+
+
+    "countries":{
+            "Italy":{
+                "exception":[
+                    "Always remove DDF coming in CEOS in case of lease Line and take mux from that site ( prefer nortel in case of Link)",
+                    "Max allow rate is 3072 while configuring ULL services",
+                    "If OLO coming on Telecom Italia Co-Location site then don’t install DD and push it to CSP."
+                ],
+                "delivery_address":[
+                    "Customer Site( Cust private/Offnet Cust)- ERO of MILAN/ROM  in Colt Milan Valtelina , Colt ROM Valentina",
+                    "MILAN/Rome Node Site ERO- To be raised in Milan , ROM,",
+                    "Colt IT Milan, Turin , Rome"
+                ]
+                },
+            
+            "Spain":{
+                "exception":
+                [
+                    "Ceases/Cancellations. For every Order Type CEASE and CANCEL, remaing tasks still doing locally are transitioned to SSC-India without Exception",
+                    "Tasks related to orders for Equipment/Rack Recovery, usually after Cease All or Internal order (following of current Harmonized Cease Process) are fully transferred to SSC-India.",
+                    "Trigger “Node Work Required”: - If last MUX in ring , If last customer circuit in node bearer (not LDN bearer) terminates the circuit in an ISC, COLO and Subnode terminates the circuit in a Node if the circuit contains a CTP in a Node.",
+                    "Trigger “CSP In-house Cabling”: should never be triggered."
+                ],
+                "delivery_address":[
+                    
+                ]
+            } ,
+            
+            "Portugal":{
+                "exception":
+                [
+                    "No CSD in case of ERO",
+                    "Eofibre and services greater than 1 Gbps is in scope of local team"
+                ],
+                "delivery_address":[
+                    
+                ]
+            },
+            
+            
+            "USA":{
+                "exception":
+                [
+                    "While planning new overture always raise extra cable ERO 199-06050.",
+                    "Please raise an ERO at SDA1701002."
+                ]
+            } 
+    },
+
     
     
     "technologies":{
@@ -76,6 +133,7 @@
             "data3"
         ]
     },
+    
     "contact_list":[
         "Alok.Mam@colt.net"
     ],
