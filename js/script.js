@@ -248,11 +248,16 @@ $(document).on('change','#technologies', function(){
 
 function selected_ero(element){
     console.log(element);
-    technology_ero  =   $('#technology_ero').val()+$(element).val()+'\n';
+    technology_ero  =   $('#technology_ero').val()+$(element).val()+', ';
     $('#technology_ero').val(technology_ero);
 
 }
 
+$('#ero_type').change(function(){
+
+    $('#technology_ero').val($(this).val()+': ');
+
+});
 
 function fetch_ero_code(ero_list){
     clear_field('technology_ero');
@@ -328,6 +333,7 @@ function load_contacts(){
 
 
 function validate_tech(){
+    $('')
     $('.technology_validate').removeClass('d-none');
 }
 
@@ -340,6 +346,7 @@ $(document).on('click','.clear_tech', function (){
     }
 
     $('#technology_ero').val('');
+    $('#ero_generated_id').val('');
 
 });
 
@@ -350,7 +357,11 @@ function clear_field(text_area){
 
 
 $('.technology_validate').click(function(){
-
+    selected_eros       =   $('#technology_ero').val();
+    ero_generated_id    =   $('#ero_generated_id').val();
+    $('#technology_ero').val(selected_eros+'\n' + ero_generated_id);
+    technology_value    =   $('#technology_ero').val();
+    $('#final_template').append('\n'+technology_value);
     $('.tech_validate').removeClass('d-none');
 
 });
