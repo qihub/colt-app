@@ -30,7 +30,7 @@ function fetch_data(){
         } 
      });
 
-    if(server!=production){
+    if(server==production){
 
         data_file      =   JSON.parse(result);
 
@@ -39,6 +39,7 @@ function fetch_data(){
         data_file      =   result;
     
     }
+
 
     return data_file;
 
@@ -72,6 +73,7 @@ $(document).on('change','#queue_type', function(){
         input_form  =   "";
         t_count =   t_count+1;
     }
+    $('.validate_template').removeClass('d-none');
     
 
 });
@@ -95,8 +97,22 @@ $('#country_list').change(function(){
     fetch_delivery_address();
     fetch_exceptions();
 
+
 });
 
+
+function fetch_exceptions(){
+
+    selected_country    =   $('#country_list').val();
+    $('#exception_data').html('');
+
+    exception_list  =   json_data.countries[selected_country].exception;
+
+    for(key in exception_list){
+        $('#exception_data').append("<li>"+exception_list[key]+"</li>");
+    }
+
+}
 
 function fetch_delivery_address(){
     $('#delivery_list').html('');
@@ -143,7 +159,7 @@ function load_countries(){
 $(document).on('change','#queues',function(){
     load_queue_type();
     load_templates();
-    $('.validate_template').removeClass('d-none');
+   
 
 });
 
@@ -167,6 +183,7 @@ function load_queue_type(){
 }
 
 function load_ero_type(){
+    selected_tech   =   $('#technologies').val();
     $('#ero_type').html('<option selected disabled>Please select ERO type</option>');
 
     eros   =   json_data.ero_codes;
@@ -258,27 +275,25 @@ $(document).on('change','#technologies', function(){
 
     $('#ero_lists').html('');
     $('#ero_generated_id').val('');
+    $('#ero_type').html("<option selected disabled>Please select</option>");
+    selected_tech    =   $('#technologies').val();
     var technology =    $(this).val();
-    $.get('data/'+data_path, function(data){
-        if(server!=production){
-            
-            ero        =   JSON.parse(data);
-        }else{
-            ero        =   data
 
-        }
 
-        ero_list        =   ero.technologies[technology];
-        ero_codes       =   ero.ero_codes;
-       
-           
-       fetch_technology(ero_list);
-       fetch_ero_code(ero_codes);
-       load_ero_type();
+    fetch_ero_code();
 
-    });
 
+    tech_ero         =   json_data.ero_codes;
+    for(key in tech_ero){
+
+        $('#ero_type').append("<option>"+tech_ero[key]+"</option>")
+
+    }
+    
+
+    
 });
+
 
 
 function selected_ero(element){
@@ -294,7 +309,9 @@ $('#ero_type').change(function(){
 
 });
 
-function fetch_ero_code(ero_list){
+function fetch_ero_code(){
+    selected_tech   =   $('#technologies').val();
+    ero_list    =   json_data.technologies[selected_tech];
     clear_field('technology_ero');
     
     ero_count       =   0;
@@ -310,7 +327,14 @@ function fetch_ero_code(ero_list){
             
         ero_count++;
     }
-    $('#ero_type').append(tech_data);
+    $('#ero_lists').append(tech_data);
+
+}
+
+function write_ero(element){
+    selected_ero_type   =   $(element).val();
+    tech_ero_value      =   $('#technology_ero').val();
+    $('#technology_ero').val(tech_ero_value+selected_ero_type+', ');
 
 }
 
@@ -370,6 +394,7 @@ function load_contacts(){
 function validate_tech(){
    
     $('.technology_validate').removeClass('d-none');
+    
 }
 
 
@@ -404,6 +429,7 @@ $('.technology_validate').click(function(){
     technology_value    =   $('#technology_ero').val();
     $('#final_template').append('\n' + technology_value+'\n');
     $('.tech_validate').removeClass('d-none');
+    $('.ero_checklist').prop('checked', false);
 
 });
 
