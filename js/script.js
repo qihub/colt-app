@@ -125,7 +125,7 @@ function fetch_delivery_address(){
         country_delivery    =   address.delivery_address;
 
         for(i in country_delivery){
-            $('#delivery_list').append(country_delivery[i]+"<br>");
+            $('#delivery_list').append("<li>"+country_delivery[i]+"<li>");
         }
 
     }
