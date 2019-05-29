@@ -30,7 +30,7 @@ function fetch_data(){
         } 
      });
 
-    if(server==production){
+    if(server!=production){
 
         data_file      =   JSON.parse(result);
 
