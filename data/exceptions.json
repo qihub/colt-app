@@ -97,6 +97,7 @@
                     "Trigger “CSP In-house Cabling”: should never be triggered."
                 ],
                 "delivery_address":[
+			"Colt ES Madrid, Barcelona and Valencia"
                     
                 ]
             },
@@ -108,6 +109,7 @@
                     "Eofibre and services greater than 1 Gbps is in scope of local team"
                 ],
                 "delivery_address":[
+			"Colt PT Lisbon"
                     
                 ]
             },
@@ -120,6 +122,7 @@
                     "Please raise an ERO at SDA1701002."
                 ],
                 "delivery_address":[
+			"COLT / MDSI  - US"
                     
                 ]
             }, 
@@ -136,6 +139,7 @@
                     "Sweden and Finland country ERO will be raise at SE Planning (for all technology)."
                 ],
                 "delivery_address":[
+			"SE : planning"
                     
                 ]
                 
@@ -154,6 +158,7 @@
 
                 ],
                 "delivery_address":[
+			"Colt UK- Princess Court"
                     
                 ]
             },
@@ -172,11 +177,61 @@
 
                 ],
                 "delivery_address":[
+			"Dk : planning"
+                ]
+            }, 
+	    
+	    
+            "Germany":{
+                "exception":
+                [
+                    "Raise ERO of cable as well in case of ULL service.",
+	            "Cease plan internal bearers as well in case of cease planning.",
+	            "BER, MUC ERO in mobile city." 
+	            "Read access info of sites.",
+	            "Add virtual ports of ISG-26R in case of overture NNI.",
+	            "HAM ERO will be raised in DHL Supply.",
+	            "CSP Plan team 2 task is in our scope.",
+	            "To confirm nearest star IQ & IQ optical both are in our scope.",
+	            "Internal orders now in our scope ( ENNI apart from DTAG is in local scope).",
+	            "In case of CH Site Do as per review notes and site access info and trigger CSP-In-house cabling - other / DC cross connect.",
+	            "In case of EoFibre- No ODF cabling in FSM node// Push to CSP for rack space and power supply in case of customer cabinet// 10 G in our  scope.",
+	            "Push to CSP for rack space and power supply in case of customer cabinet ( new equipment in customer cabinet).",
+	            "Manually change the assigned to : CSP Team 1 after pushing to CSP."
+
+
+
+               ],
+                "delivery_address":[
+			"Colt GmbH- Frankfurt/ Suttgart/ Koeln / Dusseldorf/hannover",
+			"Berlin / Munchen//  Colt Mobile Collection",
+			"Hamburg DHL Supply Chain"
                     
                 ]
-            } 
+            },
+	    
+	     "Austria":{
+                "exception":
+                [
+                    "ULL service OOS.",
+	            "Management of DD is done by local team.",
+	            "Take Dummy VLAN in case CEOS and trigger BDWACTV and write it in notes.",
+	            "Push to CSP in case of 1 G services and above and New Device Installation.",
+	            "ULL services in AT is out of scope.",
+	            "EoFiber in our scope and In case of CH Site take any device on CH site and push it to BDWPLAN for validation."
+
+               ],
+                "delivery_address":[
+			"Colt AT Vienna"
+			
+            ]
+		     
+         }
         
     },
+             
+                    
+    
 
     
     
