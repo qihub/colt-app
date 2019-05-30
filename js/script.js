@@ -57,7 +57,7 @@ $(document).on('change','#queue_type', function(){
         template_options  =  template_data[key]; 
         
         for(var option in template_options){
-            input_form        = input_form + "<input data-template-name="+key+" onChange='generate_template(this)' class='template_option template' type='radio' name='template_option_"+t_count+"' value='" +template_options[option]+ "'> "+template_options[option]+" ";
+            input_form        = input_form + "<input data-template-name='"+key+"' onChange='generate_template(this)' class='template_option template' type='radio' name='template_option_"+t_count+"' value='" +template_options[option]+ "'> "+template_options[option]+" ";
             
         }
         
