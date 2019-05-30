@@ -853,9 +853,14 @@
         ]
   },
     
-    "contact_list":[
-        "Alok.Mam@colt.net"
-    ],
+    "contact_list":{
+        "Italy":[
+            "Alok.mam@colt.net"
+        ],
+        "USA":[
+            "you@example.com"
+        ]
+    },
 
     "ero_codes":[
         "A-END",
