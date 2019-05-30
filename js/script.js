@@ -57,11 +57,11 @@ $(document).on('change','#queue_type', function(){
         template_options  =  template_data[key]; 
         
         for(var option in template_options){
-            input_form        = input_form + "<input onChange='generate_template(this)' class='template' type='radio' name='template_option_"+t_count+"' value='" +template_options[option]+ "'> "+template_options[option]+" ";
+            input_form        = input_form + "<input onChange='generate_template(this)' class='template_option template' type='radio' name='template_option_"+t_count+"' value='" +template_options[option]+ "'> "+template_options[option]+" ";
             
         }
         
-        template_form_element   =   "<div class='form-group'> <label class='template_option_"+t_count+"'>"+key+"</label><br>"+input_form+"</div>";
+        template_form_element   =   "<div class='form-group'> <label class='template_text template_option_"+t_count+"'>"+key+"</label><br>"+input_form+"</div>";
         $('#templates').append(template_form_element);
         input_form  =   "";
         t_count =   t_count+1;
