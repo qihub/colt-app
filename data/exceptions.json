@@ -41,10 +41,55 @@
             },
             "Cease":{
                 "template":{
-                    
+                     "BDW: ROUTE/MSPR Cease":[],
+                    "Cease Plan done":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Node work":[
+                        "A End",
+                        "B End",
+                        "Both End",
+                        "NA"
+                    ],
+                    "CUT OUT":[
+                        "A End",
+                        "B End",
+                        "Both End",
+                        "NA"
+                    ],
+                    "Equip Recovery":[
+                        "A End",
+                        "B End",
+                        "Both End",
+                        "NA"
+                    ],
+                    "Site Recovery updated in PM":[
+                        "A End",
+                        "B End",
+                        "Both End",
+                        "NA"
+                    ],
+                    "XNG updated for Ckt/Site/Equip/CEOS":[
+                        "Yes",
+                        "No"
+                    ],
+                     "Other ckt. Ref. validation":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Carrier hotel involved":[
+                        "A End",
+                        "B End",
+                        "Both End",
+                        "NA"
+                    ],
+                    "@Installation please recover":[
+                    ],
+                    "BDWROUT/ BDWMSPR closed":[
+                    ],
                 }
-            }
-        },
+            },
         "BDW PLAN":{
             "new":{
                 "template":{
