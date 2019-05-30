@@ -28,7 +28,15 @@
                     "Order Eligible for EED (Ethernet Express Delivery)":[
                         "Yes",
                         "No"
-                    ]
+                    ],
+                     "LDN can be routed over IQ net":[
+                        "Yes",
+                        "No"
+                    ],
+                     "ERO A-end / B-end city name":[
+                        "Yes",
+                        "No"
+                    ],
                 }
             },
             "Cease":{
