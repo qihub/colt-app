@@ -473,12 +473,12 @@
 	                "Never trigger for POP for site WI.",
 	                "As per review notes, if TVT / 3rd party longlining then push it to CSP else trigger others / DC cross connect in BDWPLAN.",
 	                "Never set site visit at provision pop.",
-                    "Dark fibre planning CSP will take care.",
-                    "Colt dublin"
+	                "Dark fibre planning CSP will take care."
 
                 ],
                 "delivery_address":[
-			"Colt UK- Princess Court"
+            "Colt UK- Princess Court",
+            "Colt dublin"
                     
                 ]
             },
