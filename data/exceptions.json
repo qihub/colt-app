@@ -114,10 +114,55 @@
             },
             "Cease":{
                 "template":{
-                    
+                     "BDW: ROUTE/MSPR Cease":[],
+                    "Cease Plan done":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Node work":[
+                        "A End",
+                        "B End",
+                        "Both End",
+                        "NA"
+                    ],
+                    "CUT OUT":[
+                        "A End",
+                        "B End",
+                        "Both End",
+                        "NA"
+                    ],
+                    "Equip Recovery":[
+                        "A End",
+                        "B End",
+                        "Both End",
+                        "NA"
+                    ],
+                    "Site Recovery updated in PM":[
+                        "A End",
+                        "B End",
+                        "Both End",
+                        "NA"
+                    ],
+                    "XNG updated for Ckt/Site/Equip/CEOS":[
+                        "Yes",
+                        "No"
+                    ],
+                     "Other ckt. Ref. validation":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Carrier hotel involved":[
+                        "A End",
+                        "B End",
+                        "Both End",
+                        "NA"
+                    ],
+                    "@Installation please recover":[
+                    ],
+                    "BDWROUT/ BDWMSPR closed":[
+                    ],
                 }
-            }
-        },
+            },
         "BDW PLAN":{
             "new":{
                 "template":{
@@ -371,6 +416,34 @@
                 [
                     "While planning new overture always raise extra cable ERO 199-06050.",
                     "Please raise an ERO at SDA1701002."
+                
+                ]
+            } ,
+            
+            "France":{
+                "exception":
+                [
+                    "LPD to be set for Existing building existing POP in CH sites",
+                    "Do not create any new Site at CH/DC without CSP consent",
+                    "CTP , optical tray and ODF documentation for ES section created by Net cracker in our scope",
+                    "Double check for the CTP/ODF if a fiber work is required for any order (viz. EOF, Ethernet Ring, Star extended services on NGN etc.). Moreover, if missed ask the details from Fibre team",
+                    "Don't miss to update Optical tray at all node site if patching is required(Or node work triggered)",
+                    "To choose correct presentation panel/Optical tray we have to look up Lineup value of the device it should be same",
+                    "First priority at DC/CH site is to deliver the service over SM 1310nm interface only, if different interface asked like RJ45 or MM 850nm. Do a double check if feasible to deliver",
+                    "If Carrier hotel site is of Equinix, Service handover should be in Colt Rack on Equinix Presentation panel. (eg. Equinix PA2,3 etc.)",
+                    "Sites like 1. FR_28190_RUE PASTEUR_24_G_LOC OPA (Diderot) and 2. FR_28300_RUE DU CHATEAU D EAU_63_G_LOC OPA (D’ALLEMBERT)  we have to trigger DC cross connect as 3rd party cabling would be required. These are special sites for Customer SILICA/CACIB etc",
+                    "For above 2 sites even the Postal code of these Sites has a Prefix value of 28 we should raise the ERO for FR Malakoff since it is taken care by Colt and not by the third party Tibco",
+                    "For Customer ORPEA, main and Backup service can be terminated on same ENNI. Its agreed with "Franck Farigoul",
+                    "Accedian ERO template is parked at Location : O:\universal\logical\SD Feedback\FR Planning\Planning Docs",
+                    "Nearest Iqnet site for Optical/Packet related query should be sent to Fibre planning team, or send the WI in FBRRING",
+                    "No CSD for any ERO raised in FR, and always use Tibco sheet for SDA location. Path: O:\universal\Logical4\CRM France Public\TIBCO Geographie",
+                    "Exceptions for FR- Cease Orders",
+                    "Do not recover CEOS created for cabling at CH/DC site, send trigger to CSP using CUTOUT trigger",
+                    "During Cease planning always mention ring/Circuit for which cutout is triggered",
+                    "•	Donot trigger CSPRACK for Customer rack recovery, it should be used to recover Colt Rack/Cabs only"
+                ],
+                "delivery_address":[
+                    "See Tibco Sheet"
                 ]
             } 
     },
