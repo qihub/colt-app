@@ -569,7 +569,7 @@
 	                "In case of BE , always create new revision of ring and document new device in new revision. Also cabinet ID --> Cab_ 6digit",
 	                "In case of BE, we need to document Fibre CTP during cut-in device.",
 	                "For PSU -  PSU_01_CAB01212, For PP   -  RJ45_01_CAB01212. In cases you have to add a new PSU/PP…. in an existing Rack and this is the second PSU/PP, then named it PSU_02_ CAB_003100 or RJ45_02_ CAB_003100 (see example CAB_003100).",
-	                "For CAB – Always use the sequence for naming & do not use ID’S like CAB_01.",
+	                "For CAB – Always use the sequence for naming & do not use ID’S like CAB_01."
 
                ],
                 "delivery_address":[
@@ -590,7 +590,7 @@
                     "in case of  customer  cab : --> Need to push to CSP team from BDWPLAN in first instance",
                     "in case of CH site --> CSP team will provide the Rack Layout Sheet.",
                     "IN case of new device installation on CH site then push to CSP for rack layout sheet",
-                    "In case of new device installation on customer site with customer cabinet push to CSP for rack space and power supply after identification of device that need to be installted.",
+                    "In case of new device installation on customer site with customer cabinet push to CSP for rack space and power supply after identification of device that need to be installted."
 
                 ],
                 "delivery_address":[
@@ -618,10 +618,10 @@
                     "In case of ULL services , please confirm from local team if FTTH or Actelis need to be documented.",									
                     "In case of CH Site push to BDWPLAN and triggers other / DC cross connect, CSP team will do longlining",									
                     "Please always add Dual AC Power for GX/GX-S Accedian Device for 1GB Ring and order additional ITEM.1 x 199-06055, 2 to 4 pin adaptor - AC/DC power supply 1 x 199-06060, AC/DC Power Supply Adapter with C6 conne ",									
-                    							
+           	
 		    "In case of new device installation on CH site then push to CSP for rack layout sheet",									
                     "In case of new device installation on customer site with customer cabinet push to CSP for rack spaceand power supply after identification of device that need to be installed",									
-    		    "In case of new device installation on customer site with colt cabinet, everything need to be done by us	"						
+    		    "In case of new device installation on customer site with colt cabinet, everything need to be done by us"						
                        								
 
 
