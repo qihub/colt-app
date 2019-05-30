@@ -256,6 +256,58 @@
                         "Yes",
                         "No"
                     ],
+                    "Diversity / Resiliency verified":[
+                        "Yes",
+                        "No"
+                    ],
+                    "O4S/WMS and Cards Status":[
+                        "Yes",
+                        "No"
+                    ],
+                    "OCI/OCLD Card combination check":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Same Ports used for WL":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Seamless capacity available":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Card & SFP check in 1C while planning":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Interface checked LANphy/WANphy":[
+                        "Yes",
+                        "No"
+                    ],
+                    "For Protected service Different wavelength to be used on DIA Node":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Check for Go live date for Virtual/Ordered O4S Used":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Wavelength selection while config PWSM":[
+                        "Yes",
+                        "No"
+                    ],
+                    "After creation of PTSC service to be move to MTSC":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Manual Path selection while configuration OTN Link":[
+                        "Yes",
+                        "No"
+                    ]
+                    
+                    
+                    
+                    
                     
                     
                     
