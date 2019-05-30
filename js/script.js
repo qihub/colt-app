@@ -102,9 +102,7 @@ function load_contacts(){
     contact_list    =   json_data.contact_list.selected_country;
 
 
-    for(key in contact_list){
-        $('#contact_list_data').append("<li>"+contact_list[key]+"</li>");
-    }
+    $('#contact_list_data').append("<li>"+contact_list[0]+"</li>");
 }
 
 function fetch_exceptions(){
