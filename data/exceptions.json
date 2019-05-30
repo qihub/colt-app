@@ -200,10 +200,27 @@
             "002-07017 NW SFP",
             "002-10625 NW SFP (85010 G SFP)"
         ],
-        "MSP":[
-            "ero_2",
-            "ero_3",
-            "ero_4"
+        "NC CISCO":[
+            "007-05076 1000 base-TSFP transciever module for category 5 copper wire (Cisco only)",
+            "199-02003 Gige sfp,mm,850nm, VCSEL,550m, LC connector",
+            "199-02011 Gige sfp,SM,1310nm,fp,12db,10km, LC connector",
+            "199-02021 Gige sfp,SM, BI DIR,1310-1490nm,20km, LC connector",
+            "199-02025 Gige sfp,SM, BI DIR,1490-1310nm,20km, LC connector",
+            "199-02041 Gige sfp,SM, BI DIR,1310-1550nm,40km, LC connector",
+            "199-02045 Gige sfp,SM, BI DIR,1550-1310nm,40km, LC connector",
+            "199-03017 10 Gige SFP+,MM,850NM,VCSEL,300M,LC connector",
+            "199-03016 10 Gige SFP+,SM,850NM,dfb,7.4db,10kM,LC connector",
+            "199-03011 10 Gige SFP+,BIDIR,1270-1330 NM,7.4db,10kM,LC connector",
+            "199-03015 10 Gige SFP+,BIDIR,1330-1270 NM,7.4db,10kM,LC connector",
+            "199-03041 10 Gige SFP+,BIDIR,1270-1330 NM,19db,40kM,LC connector",
+            "199-03045 10 Gige SFP+,BIDIR,1330-1270 NM,19db,40kM,LC connector",
+            "199-03008 ,199-03018 10 Gige SFP+,SM,1550NM, 80 KM LC DUAL FIBER",
+            "199-01670 1U ANT 1GIG Panel 3 Port Grey ,3 SLOT 1U",
+            "199-07000 ANT-1000-AX-RH AC 2 PORT ,ANT",
+            "199-01810 IEC Mains Lead IEC C14 Female-IEC C5 Mal",
+            "199-02025 GigE SFP, SM, Bi-Dir, 1490-1310nm, 20km",
+            "199-02011 GigE SFP SM 1310nm FP 12dB 10km"
+            
         ],
         "MSP":[
             "ero_2",
