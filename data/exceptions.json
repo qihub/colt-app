@@ -649,7 +649,6 @@
                     "Sites like 1. FR_28190_RUE PASTEUR_24_G_LOC OPA (Diderot) and 2. FR_28300_RUE DU CHATEAU D EAU_63_G_LOC OPA (D’ALLEMBERT)  we have to trigger DC cross connect as 3rd party cabling would be required. These are special sites for Customer SILICA/CACIB etc",
                     "For above 2 sites even the Postal code of these Sites has a Prefix value of 28 we should raise the ERO for FR Malakoff since it is taken care by Colt and not by the third party Tibco",
                     "For Customer ORPEA, main and Backup service can be terminated on same ENNI. Its agreed with Franck Farigoul",
-                    "Accedian ERO template is parked at Location : O:\universal\logical\SD Feedback\FR Planning\Planning Docs",
                     "Nearest Iqnet site for Optical/Packet related query should be sent to Fibre planning team, or send the WI in FBRRING",
                     "No CSD for any ERO raised in FR, and always use Tibco sheet for SDA location. Path: O:\universal\Logical4\CRM France Public\TIBCO Geographie",
                     "Exceptions for FR- Cease Orders",
