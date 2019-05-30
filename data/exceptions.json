@@ -377,7 +377,15 @@
                 "exception":[
                     "Always remove DDF coming in CEOS in case of lease Line and take mux from that site ( prefer nortel in case of Link)",
                     "Max allow rate is 3072 while configuring ULL services",
-                    "If OLO coming on Telecom Italia Co-Location site then don’t install DD and push it to CSP."
+                    "If OLO coming on Telecom Italia Co-Location site then don’t install DD and push it to CSP.",
+		    "CSD to be set in Offnet services as per transition document.",
+                    "For 1G and 10 G EoFibre we need to push to TSP for node ODF cabling and Management circuit cabling.",
+                    "Fast web Always deliver Optical interface at Colt Pop and also at Customer Handover Point . So if customer is requesting Electrical Interface as handover , So in that case we had to Plan Demarcation Device by default which will act as convertor to covert the signal from Optical to electrical", 
+                    "if OLO provide is ORALA than plan D.D. by default.",
+                    "Internal orders in Italy is in scope of india now except planning on CH site.",
+                    "BDWREVW is in our scope." 
+
+
                 ],
                 "delivery_address":[
                     "Customer Site( Cust private/Offnet Cust)- ERO of MILAN/ROM  in Colt Milan Valtelina , Colt ROM Valentina",
@@ -392,12 +400,24 @@
                     "Ceases/Cancellations. For every Order Type CEASE and CANCEL, remaing tasks still doing locally are transitioned to SSC-India without Exception",
                     "Tasks related to orders for Equipment/Rack Recovery, usually after Cease All or Internal order (following of current Harmonized Cease Process) are fully transferred to SSC-India.",
                     "Trigger “Node Work Required”: - If last MUX in ring , If last customer circuit in node bearer (not LDN bearer) terminates the circuit in an ISC, COLO and Subnode terminates the circuit in a Node if the circuit contains a CTP in a Node.",
-                    "Trigger “CSP In-house Cabling”: should never be triggered."
+                    "Trigger “CSP In-house Cabling”: should never be triggered.",
+		    "Trigger “CSP Rack Delivery”: last circuit in Colt or Customer rack last circuit in site.",
+	            "Trigger “Fibre Route Plan”: Last circuit on Fiber connected equipments (SDH, Atrica, Overture, Accedian, etc...) Fibre-CTP in customer circuit Dark Fibre circuits.",
+                    "Whichever planning task for “Off net” circuits for every Product Type and Access Technology will be fully owned by SSC-India.",
+	            "Fully ownership in India for EPN orders, including all Service(TLS engine creation), Primary Site and Secondary sites, and also for all Product Types (Voice orders over EPN will be actioned by SSC-India) ",
+	            "New/Mod Colt for Internal Use Orders, such as Core Projects, new bearers at Nodes, cabling, migrations, etc…  to keep in Local. Exception are internal order for EQR or Rack recovery."
+	            "Customer orders with Be spokes/special projects related tasks to will continue keeping  at local ownership."
+	            "New Orders “On Net” with Site Type: New Pop/Build Planning plus Routing (Creation of elements in XNG and end tasks with routing) will be transferred to SSC INDIA, for all Product Types and Access Technologies.  Local BDW Team will be responsible for providing fuul details on Site Design, including type of Cabinet, technology, longlining, power, diversity, fibre ring, etc.",
+	            "When a OnNet Exististing Site requires New Ring due to Capacity issue or unavailibilty of required technology, corresponding WI will be sent to CSPPLAN where Local Team will take ownership for design."
+
+
+
                 ],
                 "delivery_address":[
+			"Colt ES Madrid, Barcelona and Valencia"
                     
                 ]
-            } ,
+            },
             
             "Portugal":{
                 "exception":
@@ -406,6 +426,7 @@
                     "Eofibre and services greater than 1 Gbps is in scope of local team"
                 ],
                 "delivery_address":[
+			"Colt PT Lisbon"
                     
                 ]
             },
@@ -416,6 +437,198 @@
                 [
                     "While planning new overture always raise extra cable ERO 199-06050.",
                     "Please raise an ERO at SDA1701002."
+                ],
+                "delivery_address":[
+			"COLT / MDSI  - US"
+                    
+                ]
+            }, 
+        
+            "Sweden":{
+                "exception":
+                [
+                    "Check for OLO I/C details in orders along with other requirements.",	
+                    "Route the service if all required details are available.",
+                    "In case all other details are available in CEOS except VLAN then India team will add required Router and Demarc device (wherever applicable) and raise the ERO accordingly.",
+                    "BDWROUT task will be kept on TD until VLAN is available in CEOS.",
+                    "Once VLAN is available then engineer will complete the planning and sign off the ROUT task.",
+                    "ERO for Cabinet´s, CTP´s and all Presentation Panels and other consumables (Attenuators, brackets etc.) will be order by local team. ERO for all other Equipment will be raised by SSC IN NR Planning Team.",
+                    "Sweden and Finland country ERO will be raise at SE Planning (for all technology)."
+                ],
+                "delivery_address":[
+			"SE : planning"
+                    
+                ]
+                
+             },
+        
+             "UK/Ireland":{
+                "exception":
+                [
+                    "Never give equipment build trigger.",
+                    "BDWPLAN cease always push to CSP.",
+	                "For 10 G EOF IP will be assign by IN team and for 1 G CSP will take care.",
+	                "Never trigger for POP for site WI.",
+	                "As per review notes, if TVT / 3rd party longlining then push it to CSP else trigger others / DC cross connect in BDWPLAN.",
+	                "Never set site visit at provision pop.",
+	                "Dark fibre planning CSP will take care."
+
+                ],
+                "delivery_address":[
+			"Colt UK- Princess Court"
+                    
+                ]
+            },
+        
+             "Denmark":{
+                "exception":
+                [
+                    "Check for OLO I/C details in orders along with other requirements.",
+	                "Route the service if all required details are available.",
+	                "In case all other details are available in CEOS except VLAN then India team will add required Router and Demarc device (wherever applicable) and raise the ERO accordingly.",
+                    "These details will be pasted in diary notes.",
+	                "BDWROUT task will be kept on TD until VLAN is available in CEOS.",
+	                "Once VLAN is available then engineer will complete the planning and sign off the ROUT task.",
+	                "ERO for Cabinet´s, CTP´s and all Presentation Panels and other consumables (Attenuators, brackets etc.) will be order by local team. ERO for all other Equipment will be raised by SSC IN NR Planning Team. OK",
+	                "Norway and Denmark country ERO will be raise at DK planning (for all technology)."
+
+                ],
+                "delivery_address":[
+			"Dk : planning"
+                ]
+            }, 
+	    
+	    
+            "Germany":{
+                "exception":
+                [
+                    "Raise ERO of cable as well in case of ULL service.",
+	            "Cease plan internal bearers as well in case of cease planning.",
+	            "BER, MUC ERO in mobile city." 
+	            "Read access info of sites.",
+	            "Add virtual ports of ISG-26R in case of overture NNI.",
+	            "HAM ERO will be raised in DHL Supply.",
+	            "CSP Plan team 2 task is in our scope.",
+	            "To confirm nearest star IQ & IQ optical both are in our scope.",
+	            "Internal orders now in our scope ( ENNI apart from DTAG is in local scope).",
+	            "In case of CH Site Do as per review notes and site access info and trigger CSP-In-house cabling - other / DC cross connect.",
+	            "In case of EoFibre- No ODF cabling in FSM node// Push to CSP for rack space and power supply in case of customer cabinet// 10 G in our  scope.",
+	            "Push to CSP for rack space and power supply in case of customer cabinet ( new equipment in customer cabinet).",
+	            "Manually change the assigned to : CSP Team 1 after pushing to CSP."
+
+
+
+               ],
+                "delivery_address":[
+			"Colt GmbH- Frankfurt/ Suttgart/ Koeln / Dusseldorf/hannover",
+			"Berlin / Munchen//  Colt Mobile Collection",
+			"Hamburg DHL Supply Chain"
+                    
+                ]
+            },
+	    
+	     "Austria":{
+                "exception":
+                [
+                    "ULL service OOS.",
+	            "Management of DD is done by local team.",
+	            "Take Dummy VLAN in case CEOS and trigger BDWACTV and write it in notes.",
+	            "Push to CSP in case of 1 G services and above and New Device Installation.",
+	            "ULL services in AT is out of scope.",
+	            "EoFiber in our scope and In case of CH Site take any device on CH site and push it to BDWPLAN for validation."
+
+               ],
+                "delivery_address":[
+			"Colt AT Vienna"
+			
+            ]
+		     
+         },
+	    
+	 "Belgium":{
+                "exception":
+                [
+                    	"IP assignment in case of 10 G EoFibre in our scope but not 1Gbps.",
+	                "Check & Add BCGKRONE port in case of OLO.",
+	                "Check notes in NNI and add DD even if it is not asked in order.",
+	                "In case of CH site push to BDWPLAN and trigger in-house cabling as other.",
+	                "We first push to Fibre team ( Fibre ring) for new ring creation.",
+	                "Whenever we create cabinet it name should be CAB_ 6 digit.",
+	                "PP name and power supply name should be RJ45_01_ CAB name.",
+	                "In case of BE, we need to document Fibre CTP during cut-in device.",
+	                "In  case of PROXIMUS CEOS , Need to plan BELGACOM DSL-CPE at Off net site. BELGACOM DSL-CPE is converter that covert RJ11 (XDSL) to RJ45(LAN). ERO-220-00000",
+	                "In case CH Site push to BDWPLAN and triggers other / DC cross connect, CSP team will do longlining.",
+	                "Pls always push BDWPLAN WI in first place to FBRRING for all cases like new ring/existing ring/dedicated fiber. Once WI is returned, need to complete the routing with the mentioned CTP/ODF details.",
+	                "Pls start using below naming convention in existing CAB’s",
+	                "In case of new device installation on CH site then push to CSP for rack layout sheet.",
+	                "In case of new device installation on customer site with customer cabinet push to CSP for rack space and power supply after identification of device that need to be installed.",
+			"In case of new device installation on customer site with colt cabinet, everything need to be done by us",
+	                "1G/10G orders in our scope.",
+	                "In case of BE , always create new revision of ring and document new device in new revision. Also cabinet ID --> Cab_ 6digit",
+	                "In case of BE, we need to document Fibre CTP during cut-in device.",
+	                "For PSU -  PSU_01_CAB01212, For PP   -  RJ45_01_CAB01212. In cases you have to add a new PSU/PP…. in an existing Rack and this is the second PSU/PP, then named it PSU_02_ CAB_003100 or RJ45_02_ CAB_003100 (see example CAB_003100).",
+	                "For CAB – Always use the sequence for naming & do not use ID’S like CAB_01.",
+
+               ],
+                "delivery_address":[
+			"Colt Nossegem"
+          ]
+		     
+         },
+	    "Netherlands":{
+                "exception":
+                [
+                    "ERO always raised in AMS irrespective of city",
+                    "push to BDWPLAN and triggers others, CSP team will do longlining",
+                    "For Special projects mentioned in notes , push it to CSP",
+                    "In case of CH Site push to BDWPLAN and triggers other / DC cross connect,CSP team will do longlining",
+                    "IN CASE OF EOF",
+                    "Presentation not on our scope for CH SITE.",
+                    "In case of of customer site : colt Cab --> it is responsibility of Team IN",
+                    "in case of  customer  cab : --> Need to push to CSP team from BDWPLAN in first instance",
+                    "in case of CH site --> CSP team will provide the Rack Layout Sheet.",
+                    "IN case of new device installation on CH site then push to CSP for rack layout sheet",
+                    "In case of new device installation on customer site with customer cabinet push to CSP for rack space and power supply after identification of device that need to be installted.",
+
+                ],
+                "delivery_address":[
+			"Colt NL Amsterdam"
+                    
+                ]
+            },
+	    
+	    "Switzerland":{
+                "exception":
+                [
+                    "BA and BB are A- DXC and FA and FB are B-DXC and not connected",									
+                    "LPD setting in case contract country is not CH",								
+                    "Revertive in case of Swiss ring",									
+                    "Installation partner detail required in case of ULL orders for raising ERO",								
+                    "While raising ERO in Lugano for any SDH + MSP+ ADVA+INFINERA equipment, take",									
+                    "COLT Montagnola in Deliver to field. And for ULL services kindly use: COLT LUG Ticicom",									
+                    "For Bern we need to raise ERO in Zurich",									
+                    "ERO for new transition to be done as per CH ERO sheet",									
+                    "AC DD to be installed",									
+                    "Site Exception : all details are already filled by local team , so plz follow notes",									
+                    "For onnet service always install 2*AC and for offnet DD should be 1* AC",									
+                    "Plz follow FTTH document for Fibre to home services.",									
+                    "Please raise cable 052-00225 along with DD in Switzerland (CH) instead of 199-01806",									
+                    "In case of ULL services , please confirm from local team if FTTH or Actelis need to be documented.",									
+                    "In case of CH Site push to BDWPLAN and triggers other / DC cross connect, CSP team will do longlining",									
+                    "Please always add Dual AC Power for GX/GX-S Accedian Device for 1GB Ring and order additional ITEM.1 x 199-06055, 2 to 4 pin adaptor - AC/DC power supply 1 x 199-06060, AC/DC Power Supply Adapter with C6 conne ",									
+                    							
+		    "In case of new device installation on CH site then push to CSP for rack layout sheet",									
+                    "In case of new device installation on customer site with customer cabinet push to CSP for rack spaceand power supply after identification of device that need to be installed",									
+    		    "In case of new device installation on customer site with colt cabinet, everything need to be done by us	"						
+                       								
+
+
+                ],
+                "delivery_address":[
+			"Colt CH City ( like ZRH) for onnet and offnet",
+			"COLT Montagnola for Lugano for onnet and Colt Lug Ticicom",
+			"for ULL check installation partner detail"
+                   
                 
                 ]
             } ,
@@ -433,20 +646,39 @@
                     "If Carrier hotel site is of Equinix, Service handover should be in Colt Rack on Equinix Presentation panel. (eg. Equinix PA2,3 etc.)",
                     "Sites like 1. FR_28190_RUE PASTEUR_24_G_LOC OPA (Diderot) and 2. FR_28300_RUE DU CHATEAU D EAU_63_G_LOC OPA (D’ALLEMBERT)  we have to trigger DC cross connect as 3rd party cabling would be required. These are special sites for Customer SILICA/CACIB etc",
                     "For above 2 sites even the Postal code of these Sites has a Prefix value of 28 we should raise the ERO for FR Malakoff since it is taken care by Colt and not by the third party Tibco",
-                    "For Customer ORPEA, main and Backup service can be terminated on same ENNI. Its agreed with "Franck Farigoul",
+                    "For Customer ORPEA, main and Backup service can be terminated on same ENNI. Its agreed with Franck Farigoul",
                     "Accedian ERO template is parked at Location : O:\universal\logical\SD Feedback\FR Planning\Planning Docs",
                     "Nearest Iqnet site for Optical/Packet related query should be sent to Fibre planning team, or send the WI in FBRRING",
                     "No CSD for any ERO raised in FR, and always use Tibco sheet for SDA location. Path: O:\universal\Logical4\CRM France Public\TIBCO Geographie",
                     "Exceptions for FR- Cease Orders",
                     "Do not recover CEOS created for cabling at CH/DC site, send trigger to CSP using CUTOUT trigger",
                     "During Cease planning always mention ring/Circuit for which cutout is triggered",
-                    "•	Donot trigger CSPRACK for Customer rack recovery, it should be used to recover Colt Rack/Cabs only"
+                    "Donot trigger CSPRACK for Customer rack recovery, it should be used to recover Colt Rack/Cabs only"
                 ],
                 "delivery_address":[
                     "See Tibco Sheet"
                 ]
-            } 
+            },
+	    
+	    "GR/GCR":{
+                "exception":
+                [
+                    	"Never install any DD in GR countries/ cities like Russia etc.", 
+	                "Always install DD in GCR countries like Poland, Czeck Republic, Slovakia, Hungary, Romania & USA ",
+	                "Never trigger Equipment build ",
+	                "ERO to be raised in Uk Radeburg and follow UK ERO process."
+
+               ],
+                "delivery_address":[
+			"Uk Radeburg"
+			
+            ]
+		     
+         }
     },
+             
+                    
+    
 
     
     
