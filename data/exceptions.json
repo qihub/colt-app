@@ -276,13 +276,8 @@
             "199-03005 SFP-10000-MM-850",
             "199-03006 SFP-10000-SM-1310",
             "199-03200 AC/DC 24V Power Supply Adapter with Power Cord (UK)"
-        ],
-        "SDH":[
-            "data1",
-            "data2",
-            "data3"
         ]
-    },
+  },
     
     "contact_list":[
         "Alok.Mam@colt.net"
