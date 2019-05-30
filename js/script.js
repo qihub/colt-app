@@ -89,10 +89,23 @@ $('#country_list').change(function(){
 
     fetch_delivery_address();
     fetch_exceptions();
+    load_contacts();
 
 
 });
 
+
+function load_contacts(){
+    selected_country    =   $('#country_list').val();
+    $('#contact_list_data').html('');
+
+    contact_list    =   json_data.contact_list.selected_country;
+
+
+    for(key in contact_list){
+        $('#contact_list_data').append("<li>"+contact_list[key]+"</li>");
+    }
+}
 
 function fetch_exceptions(){
 
@@ -111,6 +124,7 @@ function fetch_delivery_address(){
     $('#delivery_list').html('');
     $('.delivery_c_heading').text('');
     selected_country    =   $('#country_list').val();
+    
     address             =   json_data.countries[selected_country];
     
     $('.delivery_c_heading').html(': '+selected_country);
