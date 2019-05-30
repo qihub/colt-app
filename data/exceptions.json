@@ -79,7 +79,15 @@
                 "exception":[
                     "Always remove DDF coming in CEOS in case of lease Line and take mux from that site ( prefer nortel in case of Link)",
                     "Max allow rate is 3072 while configuring ULL services",
-                    "If OLO coming on Telecom Italia Co-Location site then don’t install DD and push it to CSP."
+                    "If OLO coming on Telecom Italia Co-Location site then don’t install DD and push it to CSP.",
+		    "CSD to be set in Offnet services as per transition document.",
+                    "For 1G and 10 G EoFibre we need to push to TSP for node ODF cabling and Management circuit cabling.",
+                    "Fast web Always deliver Optical interface at Colt Pop and also at Customer Handover Point . So if customer is requesting Electrical Interface as handover , So in that case we had to Plan Demarcation Device by default which will act as convertor to covert the signal from Optical to electrical", 
+                    "if OLO provide is ORALA than plan D.D. by default.",
+                    "Internal orders in Italy is in scope of india now except planning on CH site.",
+                    "BDWREVW is in our scope." 
+
+
                 ],
                 "delivery_address":[
                     "Customer Site( Cust private/Offnet Cust)- ERO of MILAN/ROM  in Colt Milan Valtelina , Colt ROM Valentina",
@@ -94,7 +102,18 @@
                     "Ceases/Cancellations. For every Order Type CEASE and CANCEL, remaing tasks still doing locally are transitioned to SSC-India without Exception",
                     "Tasks related to orders for Equipment/Rack Recovery, usually after Cease All or Internal order (following of current Harmonized Cease Process) are fully transferred to SSC-India.",
                     "Trigger “Node Work Required”: - If last MUX in ring , If last customer circuit in node bearer (not LDN bearer) terminates the circuit in an ISC, COLO and Subnode terminates the circuit in a Node if the circuit contains a CTP in a Node.",
-                    "Trigger “CSP In-house Cabling”: should never be triggered."
+                    "Trigger “CSP In-house Cabling”: should never be triggered.",
+		    "Trigger “CSP Rack Delivery”: last circuit in Colt or Customer rack last circuit in site.",
+	            "Trigger “Fibre Route Plan”: Last circuit on Fiber connected equipments (SDH, Atrica, Overture, Accedian, etc...) Fibre-CTP in customer circuit Dark Fibre circuits.",
+                    "Whichever planning task for “Off net” circuits for every Product Type and Access Technology will be fully owned by SSC-India.",
+	            "Fully ownership in India for EPN orders, including all Service(TLS engine creation), Primary Site and Secondary sites, and also for all Product Types (Voice orders over EPN will be actioned by SSC-India) ",
+	            "New/Mod Colt for Internal Use Orders, such as Core Projects, new bearers at Nodes, cabling, migrations, etc…  to keep in Local. Exception are internal order for EQR or Rack recovery."
+	            "Customer orders with Be spokes/special projects related tasks to will continue keeping  at local ownership."
+	            "New Orders “On Net” with Site Type: New Pop/Build Planning plus Routing (Creation of elements in XNG and end tasks with routing) will be transferred to SSC INDIA, for all Product Types and Access Technologies.  Local BDW Team will be responsible for providing fuul details on Site Design, including type of Cabinet, technology, longlining, power, diversity, fibre ring, etc.",
+	            "When a OnNet Exististing Site requires New Ring due to Capacity issue or unavailibilty of required technology, corresponding WI will be sent to CSPPLAN where Local Team will take ownership for design."
+
+
+
                 ],
                 "delivery_address":[
 			"Colt ES Madrid, Barcelona and Valencia"
@@ -313,7 +332,23 @@
 			"for ULL check installation partner detail"
                     
                 ]
-            }
+            },
+	    
+	    "GR/GCR":{
+                "exception":
+                [
+                    	"Never install any DD in GR countries/ cities like Russia etc.", 
+	                "Always install DD in GCR countries like Poland, Czeck Republic, Slovakia, Hungary, Romania & USA ",
+	                "Never trigger Equipment build ",
+	                "ERO to be raised in Uk Radeburg and follow UK ERO process."
+
+               ],
+                "delivery_address":[
+			"Uk Radeburg"
+			
+            ]
+		     
+         }
     },
              
                     
