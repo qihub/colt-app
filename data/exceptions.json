@@ -226,8 +226,94 @@
 			
             ]
 		     
-         }
-        
+         },
+	    
+	 "Belgium":{
+                "exception":
+                [
+                    	"IP assignment in case of 10 G EoFibre in our scope but not 1Gbps.",
+	                "Check & Add BCGKRONE port in case of OLO.",
+	                "Check notes in NNI and add DD even if it is not asked in order.",
+	                "In case of CH site push to BDWPLAN and trigger in-house cabling as other.",
+	                "We first push to Fibre team ( Fibre ring) for new ring creation.",
+	                "Whenever we create cabinet it name should be CAB_ 6 digit.",
+	                "PP name and power supply name should be RJ45_01_ CAB name.",
+	                "In case of BE, we need to document Fibre CTP during cut-in device.",
+	                "In  case of PROXIMUS CEOS , Need to plan BELGACOM DSL-CPE at Off net site. BELGACOM DSL-CPE is converter that covert RJ11 (XDSL) to RJ45(LAN). ERO-220-00000",
+	                "In case CH Site push to BDWPLAN and triggers other / DC cross connect, CSP team will do longlining.",
+	                "Pls always push BDWPLAN WI in first place to FBRRING for all cases like new ring/existing ring/dedicated fiber. Once WI is returned, need to complete the routing with the mentioned CTP/ODF details.",
+	                "Pls start using below naming convention in existing CAB’s",
+	                "In case of new device installation on CH site then push to CSP for rack layout sheet.",
+	                "In case of new device installation on customer site with customer cabinet push to CSP for rack space and power supply after identification of device that need to be installed.",
+			"In case of new device installation on customer site with colt cabinet, everything need to be done by us",
+	                "1G/10G orders in our scope.",
+	                "In case of BE , always create new revision of ring and document new device in new revision. Also cabinet ID --> Cab_ 6digit",
+	                "In case of BE, we need to document Fibre CTP during cut-in device.",
+	                "For PSU -  PSU_01_CAB01212, For PP   -  RJ45_01_CAB01212. In cases you have to add a new PSU/PP…. in an existing Rack and this is the second PSU/PP, then named it PSU_02_ CAB_003100 or RJ45_02_ CAB_003100 (see example CAB_003100).",
+	                "For CAB – Always use the sequence for naming & do not use ID’S like CAB_01.",
+
+               ],
+                "delivery_address":[
+			"Colt Nossegem"
+          ]
+		     
+         },
+	    "Netherlands":{
+                "exception":
+                [
+                    "ERO always raised in AMS irrespective of city",
+                    "push to BDWPLAN and triggers others, CSP team will do longlining",
+                    "For Special projects mentioned in notes , push it to CSP",
+                    "In case of CH Site push to BDWPLAN and triggers other / DC cross connect,CSP team will do longlining",
+                    "IN CASE OF EOF",
+                    "Presentation not on our scope for CH SITE.",
+                    "In case of of customer site : colt Cab --> it is responsibility of Team IN",
+                    "in case of  customer  cab : --> Need to push to CSP team from BDWPLAN in first instance",
+                    "in case of CH site --> CSP team will provide the Rack Layout Sheet.",
+                    "IN case of new device installation on CH site then push to CSP for rack layout sheet",
+                    "In case of new device installation on customer site with customer cabinet push to CSP for rack space and power supply after identification of device that need to be installted.",
+
+                ],
+                "delivery_address":[
+			"Colt NL Amsterdam"
+                    
+                ]
+            },
+	    
+	    "Switzerland":{
+                "exception":
+                [
+                    "BA and BB are A- DXC and FA and FB are B-DXC and not connected",									
+                    "LPD setting in case contract country is not CH",								
+                    "Revertive in case of Swiss ring",									
+                    "Installation partner detail required in case of ULL orders for raising ERO",								
+                    "While raising ERO in Lugano for any SDH + MSP+ ADVA+INFINERA equipment, take",									
+                    "COLT Montagnola in Deliver to field. And for ULL services kindly use: COLT LUG Ticicom",									
+                    "For Bern we need to raise ERO in Zurich",									
+                    "ERO for new transition to be done as per CH ERO sheet",									
+                    "AC DD to be installed",									
+                    "Site Exception : all details are already filled by local team , so plz follow notes",									
+                    "For onnet service always install 2*AC and for offnet DD should be 1* AC",									
+                    "Plz follow FTTH document for Fibre to home services.",									
+                    "Please raise cable 052-00225 along with DD in Switzerland (CH) instead of 199-01806",									
+                    "In case of ULL services , please confirm from local team if FTTH or Actelis need to be documented.",									
+                    "In case of CH Site push to BDWPLAN and triggers other / DC cross connect, CSP team will do longlining",									
+                    "Please always add Dual AC Power for GX/GX-S Accedian Device for 1GB Ring and order additional ITEM.1 x 199-06055, 2 to 4 pin adaptor - AC/DC power supply 1 x 199-06060, AC/DC Power Supply Adapter with C6 conne ",									
+                    							
+		    "In case of new device installation on CH site then push to CSP for rack layout sheet",									
+                    "In case of new device installation on customer site with customer cabinet push to CSP for rack spaceand power supply after identification of device that need to be installed",									
+    		    "In case of new device installation on customer site with colt cabinet, everything need to be done by us	"						
+                       								
+
+
+                ],
+                "delivery_address":[
+			"Colt CH City ( like ZRH) for onnet and offnet",
+			"COLT Montagnola for Lugano for onnet and Colt Lug Ticicom",
+			"for ULL check installation partner detail"
+                    
+                ]
+            }
     },
              
                     
