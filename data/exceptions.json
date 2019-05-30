@@ -407,8 +407,8 @@
 	            "Trigger “Fibre Route Plan”: Last circuit on Fiber connected equipments (SDH, Atrica, Overture, Accedian, etc...) Fibre-CTP in customer circuit Dark Fibre circuits.",
                     "Whichever planning task for “Off net” circuits for every Product Type and Access Technology will be fully owned by SSC-India.",
 	            "Fully ownership in India for EPN orders, including all Service(TLS engine creation), Primary Site and Secondary sites, and also for all Product Types (Voice orders over EPN will be actioned by SSC-India) ",
-	            "New/Mod Colt for Internal Use Orders, such as Core Projects, new bearers at Nodes, cabling, migrations, etc…  to keep in Local. Exception are internal order for EQR or Rack recovery."
-	            "Customer orders with Be spokes/special projects related tasks to will continue keeping  at local ownership."
+	            "New/Mod Colt for Internal Use Orders, such as Core Projects, new bearers at Nodes, cabling, migrations, etc…  to keep in Local. Exception are internal order for EQR or Rack recovery.",
+	            "Customer orders with Be spokes/special projects related tasks to will continue keeping  at local ownership.",
 	            "New Orders “On Net” with Site Type: New Pop/Build Planning plus Routing (Creation of elements in XNG and end tasks with routing) will be transferred to SSC INDIA, for all Product Types and Access Technologies.  Local BDW Team will be responsible for providing fuul details on Site Design, including type of Cabinet, technology, longlining, power, diversity, fibre ring, etc.",
 	            "When a OnNet Exististing Site requires New Ring due to Capacity issue or unavailibilty of required technology, corresponding WI will be sent to CSPPLAN where Local Team will take ownership for design."
 
