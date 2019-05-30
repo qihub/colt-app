@@ -186,10 +186,19 @@
             "199-02000 MM/SX",
             "134-00125 A-2200 Power supply AC, ETSI Front Entry"
         ],
-             "MSP":[
-            "ero_2",
-            "ero_3",
-            "ero_4"
+        "IQNET CIENA":[
+            "002-11280 100G MOTR Basic",
+            "002-10850 10G SFP+ (SM-1310) for MOTR",
+            "002-10405 10G SFP+ (MM-850) for MOTR",
+            "002-11130 8GFC SFP+ (SM-13100 for MOTR",
+            "002-11500 10G SFP+ (ER)- for MOTR",
+            "002-11490 10*10 OTN Crad",
+            "002-10615 OPS(4*OPS)",
+            "002-10620 OPS(2*OPS)",
+            "002-10325 1+8 Flex MOTR",
+            "002-06445 SFB 1310 Client MOTR",
+            "002-07017 NW SFP",
+            "002-10625 NW SFP (85010 G SFP)"
         ],
         "MSP":[
             "ero_2",
