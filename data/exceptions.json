@@ -22,8 +22,10 @@
                         "No"
                     ],
                     "Node work":[
-                        "Yes",
-                        "No"
+                        "A-END",
+                        "B-END",
+                        "BOTH",
+                        "NA"
                     ],
                     "Order Eligible for EED (Ethernet Express Delivery)":[
                         "Yes",
@@ -34,17 +36,133 @@
                         "No"
                     ],
                      "ERO A-end / B-end city name":[
+                        "A-END",
+                        "B-END",
+                        "NA"
+                    ],
+                     "Performance Monitoring":[
                         "Yes",
                         "No"
                     ],
+                    "PAM Enabled in ITSM/XNG":[
+                        "Yes",
+                        "No"
+                    ],
+                    "COS Required":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Additional Feature checked":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Demarcation device (Belgacom /M-MSP NNI)":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Provisioned POPs updated":[
+                        "Yes",
+                        "No"
+                    ],
+                    "IP address assigned":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Equip Build":[
+                        "A-END",
+                        "B-END",
+                        "BOTH",
+                        "NA"
+                    ],
+                     "Carrier Hotel/TVT Site involved":[
+                        "A-END",
+                        "B-END",
+                        "BOTH",
+                        "NA"
+                    ],
+                    "LPD Setting":[
+                        "A-END",
+                        "B-END",
+                        "BOTH",
+                        "NA"
+                    ],
+                    "Resiliency/Relationship defined":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Test Method Updated (Y.1564/ASPEN/OTHER)":[
+                        "Yes",
+                        "No"
+                    ],
+                    "OLO NNI bandwidth updated":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Diversity / Resiliency Required":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Relationship Added":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Port Status/Port Access ID Updated":[
+                        "Yes",
+                        "No"
+                    ]
                 }
             },
             "Cease":{
                 "template":{
-                    
+                     "BDW: ROUTE/MSPR Cease":[],
+                    "Cease Plan done":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Node work":[
+                        "A End",
+                        "B End",
+                        "Both End",
+                        "NA"
+                    ],
+                    "CUT OUT":[
+                        "A End",
+                        "B End",
+                        "Both End",
+                        "NA"
+                    ],
+                    "Equip Recovery":[
+                        "A End",
+                        "B End",
+                        "Both End",
+                        "NA"
+                    ],
+                    "Site Recovery updated in PM":[
+                        "A End",
+                        "B End",
+                        "Both End",
+                        "NA"
+                    ],
+                    "XNG updated for Ckt/Site/Equip/CEOS":[
+                        "Yes",
+                        "No"
+                    ],
+                     "Other ckt. Ref. validation":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Carrier hotel involved":[
+                        "A End",
+                        "B End",
+                        "Both End",
+                        "NA"
+                    ],
+                    "@Installation please recover":[
+                    ],
+                    "BDWROUT/ BDWMSPR closed":[
+                    ],
                 }
-            }
-        },
+            },
         "BDW PLAN":{
             "new":{
                 "template":{
@@ -53,15 +171,195 @@
                         "B End"
                     ],
                     "XNG Planning Done:":[
-                        "Done"
+                        "Yes",
+                        "No"
                     ],
                     "Ring defined":[
-                        "ER-xxxxxxx"
+                        "Yes",
+                        "No"
                     ],
                     "Circuit Status":[
                         "Virtual",
                         "Ordered"
+                    ],
+                    "Atrica/Accedian ID AC/DC and Contained in BAIE (cust/Colt)":[
+                        "Cust Cab",
+                        "Colt Cab"
+                    ],
+                    "Node work":[
+                        "A-END",
+                        "B-END",
+                        "BOTH",
+                        "NA"
+                    ],
+                    "Order Eligible for EED (Ethernet Express Delivery)":[
+                        "Yes",
+                        "No"
+                    ],
+                    "LDN can be routed over IQ net":[
+                        "Yes",
+                        "No"
+                    ],
+                    "COS Required":[
+                        "Yes",
+                        "No"
+                    ],
+                    "ERO A-end / B-end city name":[
+                        "A-END",
+                        "B-END",
+                        "NA"
+                    ],
+                    "Performance Monitoring":[
+                        "Yes",
+                        "No"
+                    ],
+                    "PAM Enabled in ITSM/XNG":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Additional Feature checked":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Demarcation device (Belgacom /M-MSP NNI)":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Provisioned POPs updated":[
+                        "Yes",
+                        "No"
+                    ],
+                    "IP address assigned":[
+                        "Yes",
+                        "No"
+                    ],
+                    "UDA SITE MSP pre-cabled":[
+                        "Yes",
+                        "No"
+                    ],
+                    "UDA Network Priority":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Fibre Rout Plan":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Fibre Hold":[
+                        "Yes",
+                        "No"
+                    ],
+                    "CSP Rack Delivery":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Equip Build":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Image checked in ASPEN":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Longlining Triggers":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Diversity / Resiliency Required":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Relationship Added":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Port Status/Port Access ID Updated":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Test Method Updated (Y.1564/ASPEN/OTHER)":[
+                        "Yes",
+                        "No"
+                    ],
+                    "OLO NNI bandwidth updated":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Routing completed End to End":[
+                        "Yes",
+                        "No"
+                    ],
+                    "MPO cable documentation":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Trunk Group Update: IQ Net Optical & Wavelength Used":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Wavelength availability check (DIA sites/93 not to be used)":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Diversity / Resiliency verified":[
+                        "Yes",
+                        "No"
+                    ],
+                    "O4S/WMS and Cards Status":[
+                        "Yes",
+                        "No"
+                    ],
+                    "OCI/OCLD Card combination check":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Same Ports used for WL":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Seamless capacity available":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Card & SFP check in 1C while planning":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Interface checked LANphy/WANphy":[
+                        "Yes",
+                        "No"
+                    ],
+                    "For Protected service Different wavelength to be used on DIA Node":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Check for Go live date for Virtual/Ordered O4S Used":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Wavelength selection while config PWSM":[
+                        "Yes",
+                        "No"
+                    ],
+                    "After creation of PTSC service to be move to MTSC":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Manual Path selection while configuration OTN Link":[
+                        "Yes",
+                        "No"
                     ]
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
                 }
             },
             "Cease":{
@@ -330,7 +628,35 @@
 			"Colt CH City ( like ZRH) for onnet and offnet",
 			"COLT Montagnola for Lugano for onnet and Colt Lug Ticicom",
 			"for ULL check installation partner detail"
-                    
+                   
+                
+                ]
+            } ,
+            
+            "France":{
+                "exception":
+                [
+                    "LPD to be set for Existing building existing POP in CH sites",
+                    "Do not create any new Site at CH/DC without CSP consent",
+                    "CTP , optical tray and ODF documentation for ES section created by Net cracker in our scope",
+                    "Double check for the CTP/ODF if a fiber work is required for any order (viz. EOF, Ethernet Ring, Star extended services on NGN etc.). Moreover, if missed ask the details from Fibre team",
+                    "Don't miss to update Optical tray at all node site if patching is required(Or node work triggered)",
+                    "To choose correct presentation panel/Optical tray we have to look up Lineup value of the device it should be same",
+                    "First priority at DC/CH site is to deliver the service over SM 1310nm interface only, if different interface asked like RJ45 or MM 850nm. Do a double check if feasible to deliver",
+                    "If Carrier hotel site is of Equinix, Service handover should be in Colt Rack on Equinix Presentation panel. (eg. Equinix PA2,3 etc.)",
+                    "Sites like 1. FR_28190_RUE PASTEUR_24_G_LOC OPA (Diderot) and 2. FR_28300_RUE DU CHATEAU D EAU_63_G_LOC OPA (D’ALLEMBERT)  we have to trigger DC cross connect as 3rd party cabling would be required. These are special sites for Customer SILICA/CACIB etc",
+                    "For above 2 sites even the Postal code of these Sites has a Prefix value of 28 we should raise the ERO for FR Malakoff since it is taken care by Colt and not by the third party Tibco",
+                    "For Customer ORPEA, main and Backup service can be terminated on same ENNI. Its agreed with Franck Farigoul",
+                    "Accedian ERO template is parked at Location : O:\universal\logical\SD Feedback\FR Planning\Planning Docs",
+                    "Nearest Iqnet site for Optical/Packet related query should be sent to Fibre planning team, or send the WI in FBRRING",
+                    "No CSD for any ERO raised in FR, and always use Tibco sheet for SDA location. Path: O:\universal\Logical4\CRM France Public\TIBCO Geographie",
+                    "Exceptions for FR- Cease Orders",
+                    "Do not recover CEOS created for cabling at CH/DC site, send trigger to CSP using CUTOUT trigger",
+                    "During Cease planning always mention ring/Circuit for which cutout is triggered",
+                    "Donot trigger CSPRACK for Customer rack recovery, it should be used to recover Colt Rack/Cabs only"
+                ],
+                "delivery_address":[
+                    "See Tibco Sheet"
                 ]
             },
 	    
@@ -358,21 +684,158 @@
     
     "technologies":{
         "MMSP":[
-            "ero 1",
-            "ero 2",
-            "ero 3"
+            "199-03000 Metro NODE LTS DC",
+            "199-03005 SFP-10000-MM-850",
+            "199-03016 SFP-10000-SM-1310",
+            "199-02090 10/100/1000 Copper SFP",
+            "199-03041 SFP-10000-BIDIR-40KM-1270",
+            "199-03045 SFP-10000-BIDIR-40KM-1330",
+            "199-03018 SFP-10000-SM-80KM-1550",
+            "199-03007 SFP-10000-SM-40KM-1550",
+            "199-03100 AC/DC Wall Adapter + AC power Cord EU",
+            "182-0010 Netzkabel Nokia/Cisco, Dual Feed, 4x1.5q",
+            "161-00065 DC Cable For Schrof",
+            "182-0010 Netzkabel Nokia/Cisco, Dual Feed",
+            "199-03010 SFP-10000-BIDIR-10KM-1270",
+            "199-03015 SFP-10000-BIDIR-10KM-1330",
+            "199-01600 Breiz-GT-1U",
+            "199-01650 Breiz-GT-2U",
+            "199-01500 Metro NID GT DC",
+            "199-01510 MetroNID™ GT AC",
+            "199-01520 MetroNID™ GT AC-AC",
+            "199-01000 Metro NID GTS DC OPTICAL PRES",
+            "199-01010 MetroNID™ GTS AC",
+            "199-01020 MetroNID™ GTS AC-AC",
+            "052-00225 ROTRONIC S - ROLINE Netzkabel T12 auf C5",
+            "199-01806 AC Power Cord for GT (EUR)",
+            "199-01801 DC A/B Power Connection Terminal Block A",
+            "182-0010 Netzkabel Nokia/Cisco, Dual Feed, 4x1.5q",
+            "199-02090 10/100/1000 Copper SFP",
+            "199-02003 SFP-1000-MM-850",
+            "199-02011 SFP-1000-SM-10KM-1310",
+            "199-02041 SFP-1000-BIDIR-40KM-1310",
+            "199-02045 SFP-1000-BIDIR-40KM-1550",
+            "199-02082 SFP-1000-BIDIR-80KM-1490",
+            "199-02085 SFP-1000-BIDIR-80KM-1570",
+            "199-06000 ACN METRO NID GX DC CHASSIS",
+            "199-06001 ACN METRO NID GX AC CHASSIS",
+            "199-06010 ACN METRO NID GX-S DC",
+            "199-06011 ACN METRO NID GX-S AC",
+            "052-00225 ROTRONIC S-ROLINE Netzkabel T12 auf C5",
+            "199-06055 2 to 4 pin adaptor - AC/DC power supply",
+            "199-06060 AC/DC Power Supply Adapter with C6 conne",
+            "199-01806 AC Power Cord for GT EUR",
+            "199-02090 10/100/1000 Copper SFP",
+            "199-02003 SFP-1000-MM-850",
+            "199-02011 SFP-1000-SM-10KM-1310",
+            "199-02041 SFP-1000-BIDIR-40KM-1310",
+            "199-02045 SFP-1000-BIDIR-40KM-1550"
         ],
         "MSP":[
-            "ero_2",
-            "ero_3",
-            "ero_4"
+            "134-00120 A-2200 chassis",
+            "134-00130 DC power (48V)",
+            "161-00020 DC Cable",
+            "134-00200 Bracjet Rack kit",
+            "134-00020 GBE SFP- Tx1310- Rx1550",
+            "134-00025 GBE SFP- Tx1550- Rx1310",
+            "134-00135 8-port 10/100/1000Base-T",
+            "134-00150 10-port 100/1000Base-X",
+            "199-02010 SM/LX :SFP AT10006-ID",
+            "199-02000 MM/SX",
+            "134-00125 A-2200 Power supply AC, ETSI Front Entry"
+        ],
+        "IQNET CIENA":[
+            "002-11280 100G MOTR Basic",
+            "002-10850 10G SFP+ (SM-1310) for MOTR",
+            "002-10405 10G SFP+ (MM-850) for MOTR",
+            "002-11130 8GFC SFP+ (SM-13100 for MOTR",
+            "002-11500 10G SFP+ (ER)- for MOTR",
+            "002-11490 10*10 OTN Crad",
+            "002-10615 OPS(4*OPS)",
+            "002-10620 OPS(2*OPS)",
+            "002-10325 1+8 Flex MOTR",
+            "002-06445 SFB 1310 Client MOTR",
+            "002-07017 NW SFP",
+            "002-10625 NW SFP (85010 G SFP)"
+        ],
+        "NC CISCO":[
+            "007-05076 1000 base-TSFP transciever module for category 5 copper wire (Cisco only)",
+            "199-02003 Gige sfp,mm,850nm, VCSEL,550m, LC connector",
+            "199-02011 Gige sfp,SM,1310nm,fp,12db,10km, LC connector",
+            "199-02021 Gige sfp,SM, BI DIR,1310-1490nm,20km, LC connector",
+            "199-02025 Gige sfp,SM, BI DIR,1490-1310nm,20km, LC connector",
+            "199-02041 Gige sfp,SM, BI DIR,1310-1550nm,40km, LC connector",
+            "199-02045 Gige sfp,SM, BI DIR,1550-1310nm,40km, LC connector",
+            "199-03017 10 Gige SFP+,MM,850NM,VCSEL,300M,LC connector",
+            "199-03016 10 Gige SFP+,SM,850NM,dfb,7.4db,10kM,LC connector",
+            "199-03011 10 Gige SFP+,BIDIR,1270-1330 NM,7.4db,10kM,LC connector",
+            "199-03015 10 Gige SFP+,BIDIR,1330-1270 NM,7.4db,10kM,LC connector",
+            "199-03041 10 Gige SFP+,BIDIR,1270-1330 NM,19db,40kM,LC connector",
+            "199-03045 10 Gige SFP+,BIDIR,1330-1270 NM,19db,40kM,LC connector",
+            "199-03008 ,199-03018 10 Gige SFP+,SM,1550NM, 80 KM LC DUAL FIBER",
+            "199-01670 1U ANT 1GIG Panel 3 Port Grey ,3 SLOT 1U",
+            "199-07000 ANT-1000-AX-RH AC 2 PORT ,ANT",
+            "199-01810 IEC Mains Lead IEC C14 Female-IEC C5 Mal",
+            "199-02025 GigE SFP, SM, Bi-Dir, 1490-1310nm, 20km",
+            "199-02011 GigE SFP SM 1310nm FP 12dB 10km"
+            
+        ],
+        "EOFibre":[
+            "199-03000 Metro NODE LTS DC ",
+            "199-03005 SFP-10000-MM-850",
+            "199-03016 SFP-10000-SM-1310",
+            "199-02090 10/100/1000 Copper SFP",
+            "199-03041 SFP-10000-BIDIR-40KM-1270",
+            "199-03045 SFP-10000-BIDIR-40KM-1330",
+            "199-03018 SFP-10000-SM-80KM-1550",
+            "199-03007 SFP-10000-SM-40KM-1550",
+            "199-03100 AC/DC Wall Adapter + AC power Cord EU",
+            "182-0010 Netzkabel Nokia/Cisco, Dual Feed, 4x1.5q",
+            "161-00065 DC Cable For Schrof",
+            "182-0010 Netzkabel Nokia/Cisco, Dual Feed",
+            "199-03010 SFP-10000-BIDIR-10KM-1270",
+            "199-03015 SFP-10000-BIDIR-10KM-1330",
+            "199-01600 Breiz-GT-1U",
+            "199-01650 Breiz-GT-2U",
+            "199-01500 Metro NID GT DC(ELECTR. PRES.)",
+            "199-01510 MetroNID™ GT AC",
+            "199-01520 MetroNID™ GT AC-AC",
+            "199-01000 Metro NID GTS DC(OPTICAL PRES.)",
+            "199-01010 MetroNID™ GTS AC",
+            "199-01020 MetroNID™ GTS AC-AC",
+            "052-00225 ROTRONIC S - ROLINE Netzkabel T12 auf C5",
+            "199-01806 AC Power Cord for GT (EUR)",
+            "199-01801 DC A/B Power Connection Terminal Block A",
+            "182-0010 Netzkabel Nokia/Cisco, Dual Feed, 4x1.5q",
+            "199-02090 10/100/1000 Copper SFP ",
+            "199-02003 SFP-1000-MM-850",
+            "199-02011 SFP-1000-SM-10KM-1310",
+            "199-02041 SFP-1000-BIDIR-40KM-1310",
+            "199-02045 SFP-1000-BIDIR-40KM-1550",
+            "199-02082 SFP-1000-BIDIR-80KM-1490",
+            "199-02085 SFP-1000-BIDIR-80KM-1570"
         ],
         "OFFNET":[
-            "data1",
-            "data2",
-            "data3"
+            "146-00045 OVE ET2",
+            "146-00005 ISG26",
+            "146-00170 IEC  C14 to Figure  8  power loom",
+            "146-00045 OVE ET2",
+            "146-00110 ISG26S",
+            "199-02003 SFP-1000-MM-850",
+            "199-02011 SFP-1000-SM-10KM-1310",
+            "199-01600 Breiz-GT-1U",
+            "199-01510 Metro NID GT AC(ELECTR. PRES.)",
+            "199-01807 AC Power Cord for GT ( not for UK )",
+            "199-01806 AC Power Cord for GT (UK only)",
+            "199-01810 IEC Mains Lead IEC C14 Female-IEC C5 Male 2m",
+            "199-01010 Metro NID GTS AC(OPTICAL PRES.)",
+            "199-02090 10/100/1000 Copper SFP",
+            "199-03000 Metro NODE LTS DC",
+            "199-03005 SFP-10000-MM-850",
+            "199-03006 SFP-10000-SM-1310",
+            "199-03200 AC/DC 24V Power Supply Adapter with Power Cord (UK)"
         ]
-    },
+  },
     
     "contact_list":[
         "Alok.Mam@colt.net"
