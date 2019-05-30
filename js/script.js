@@ -30,7 +30,7 @@ function fetch_data(){
         } 
      });
 
-    if(server!=production){
+    if(server==production){
 
         data_file      =   JSON.parse(result);
 
@@ -53,6 +53,7 @@ $(document).on('change','#queue_type', function(){
 
     selected_queue_type     =   $('#queue_type').val();
     selected_queue          =   $('#queues').val();
+    $('#templates').html('');
 
     template_data   =   json_data.queues[selected_queue][selected_queue_type].template;
     //console.log(template_data);
@@ -125,7 +126,7 @@ function fetch_delivery_address(){
         country_delivery    =   address.delivery_address;
 
         for(i in country_delivery){
-            $('#delivery_list').append("<li>"+country_delivery[i]+"<li>");
+            $('#delivery_list').append("<li>"+country_delivery[i]+"</li>");
         }
 
     }

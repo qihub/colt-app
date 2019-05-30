@@ -371,6 +371,7 @@
             }
         }
         
+    }
     },
 
 
@@ -417,7 +418,6 @@
                 ],
                 "delivery_address":[
 			"Colt ES Madrid, Barcelona and Valencia"
-                    
                 ]
             },
             
@@ -850,6 +850,4 @@
 
 
     
-}
-
 }
