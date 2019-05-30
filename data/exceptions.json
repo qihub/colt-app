@@ -257,12 +257,27 @@
             "199-02082 SFP-1000-BIDIR-80KM-1490",
             "199-02085 SFP-1000-BIDIR-80KM-1570"
         ],
-        "MSP":[
-            "ero_2",
-            "ero_3",
-            "ero_4"
-        ],
         "OFFNET":[
+            "146-00045 OVE ET2",
+            "146-00005 ISG26",
+            "146-00170 IEC  C14 to Figure  8  power loom",
+            "146-00045 OVE ET2",
+            "146-00110 ISG26S",
+            "199-02003 SFP-1000-MM-850",
+            "199-02011 SFP-1000-SM-10KM-1310",
+            "199-01600 Breiz-GT-1U",
+            "199-01510 Metro NID GT AC(ELECTR. PRES.)",
+            "199-01807 AC Power Cord for GT ( not for UK )",
+            "199-01806 AC Power Cord for GT (UK only)",
+            "199-01810 IEC Mains Lead IEC C14 Female-IEC C5 Male 2m",
+            "199-01010 Metro NID GTS AC(OPTICAL PRES.)",
+            "199-02090 10/100/1000 Copper SFP",
+            "199-03000 Metro NODE LTS DC",
+            "199-03005 SFP-10000-MM-850",
+            "199-03006 SFP-10000-SM-1310",
+            "199-03200 AC/DC 24V Power Supply Adapter with Power Cord (UK)"
+        ],
+        "SDH":[
             "data1",
             "data2",
             "data3"
