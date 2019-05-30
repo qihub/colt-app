@@ -14,8 +14,8 @@
                         "No"
                     ],
                     "Circuit Status":[
-                        "Yes",
-                        "No"
+                        "Virtual",
+                        "Ordered"
                     ],
                     "Delivery Over IQ-Packet (NGN)":[
                         "Yes",
@@ -368,6 +368,24 @@
             "Cease":{
                 "template":{
                     
+                }
+            }
+        },
+        "Config":{
+            "new":{
+                "template":{
+                    "template sentance goes here":[
+                        "option 1",
+                        "option 2"
+                    ]
+                }
+            },
+            "Cease":{
+                "template":{
+                    "template sentance goes here too":[
+                        "opt 1",
+                        "opt 2"
+                    ]
                 }
             }
         }
