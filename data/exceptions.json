@@ -34,6 +34,31 @@
                         "No"
                     ],
                      "ERO A-end / B-end city name":[
+                        "A-END",
+                        "B-END",
+                        "NA"
+                    ],
+                     "Performance Monitoring":[
+                        "Yes",
+                        "No"
+                    ],
+                    "PAM Enabled in ITSM/XNG":[
+                        "Yes",
+                        "No"
+                    ],
+                    "COS Required":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Additional Feature checked":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Demarcation device (Belgacom /M-MSP NNI)":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Provisioned POPs updated":[
                         "Yes",
                         "No"
                     ],
