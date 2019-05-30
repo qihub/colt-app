@@ -174,6 +174,34 @@
             "199-02045 SFP-1000-BIDIR-40KM-1550"
         ],
         "MSP":[
+            "134-00120 A-2200 chassis",
+            "134-00130 DC power (48V)",
+            "161-00020 DC Cable",
+            "134-00200 Bracjet Rack kit",
+            "134-00020 GBE SFP- Tx1310- Rx1550",
+            "134-00025 GBE SFP- Tx1550- Rx1310",
+            "134-00135 8-port 10/100/1000Base-T",
+            "134-00150 10-port 100/1000Base-X",
+            "199-02010 SM/LX :SFP AT10006-ID",
+            "199-02000 MM/SX",
+            "134-00125 A-2200 Power supply AC, ETSI Front Entry"
+        ],
+             "MSP":[
+            "ero_2",
+            "ero_3",
+            "ero_4"
+        ],
+        "MSP":[
+            "ero_2",
+            "ero_3",
+            "ero_4"
+        ],
+        "MSP":[
+            "ero_2",
+            "ero_3",
+            "ero_4"
+        ],
+        "MSP":[
             "ero_2",
             "ero_3",
             "ero_4"
