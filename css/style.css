@@ -3,3 +3,13 @@
     padding:10px 10px;
     background-color: #000 !important;
 }
+
+#templates{
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+#ero_lists {
+    max-height: 400px;
+    overflow-y: scroll;
+}

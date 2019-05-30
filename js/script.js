@@ -418,7 +418,7 @@ $('.technology_validate').click(function(){
     }
 
     $('#ero_generated_id').val('');
-    $('#technology_ero').val(selected_eros+'\n' + ero_generated_id);
+    $('#technology_ero').val(selected_eros+'\n ERO ID: ' + ero_generated_id);
     technology_value    =   $('#technology_ero').val();
     $('#final_template').append('\n' + technology_value+'\n');
     $('.tech_validate').removeClass('d-none');

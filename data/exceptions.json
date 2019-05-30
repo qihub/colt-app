@@ -164,7 +164,8 @@
 		    "BDWROUT/ BDWMSPR closed":[
                     ]
                 }
-            },
+            }
+        },
         "BDW PLAN":{
             "new":{
                 "template":{
@@ -370,8 +371,6 @@
                 }
             }
         }
-        
-    }
     },
 
 
@@ -679,9 +678,6 @@
          }
     },
              
-                    
-    
-
     
     
     "technologies":{
