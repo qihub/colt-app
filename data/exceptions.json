@@ -99,7 +99,7 @@
                 "delivery_address":[
                     
                 ]
-            } ,
+            },
             
             "Portugal":{
                 "exception":
@@ -118,8 +118,64 @@
                 [
                     "While planning new overture always raise extra cable ERO 199-06050.",
                     "Please raise an ERO at SDA1701002."
+                ],
+                "delivery_address":[
+                    
+                ]
+            }, 
+        
+            "Sweden":{
+                "exception":
+                [
+                    "Check for OLO I/C details in orders along with other requirements.",	
+                    "Route the service if all required details are available.",
+                    "In case all other details are available in CEOS except VLAN then India team will add required Router and Demarc device (wherever applicable) and raise the ERO accordingly.",
+                    "BDWROUT task will be kept on TD until VLAN is available in CEOS.",
+                    "Once VLAN is available then engineer will complete the planning and sign off the ROUT task.",
+                    "ERO for Cabinet´s, CTP´s and all Presentation Panels and other consumables (Attenuators, brackets etc.) will be order by local team. ERO for all other Equipment will be raised by SSC IN NR Planning Team.",
+                    "Sweden and Finland country ERO will be raise at SE Planning (for all technology)."
+                ],
+                "delivery_address":[
+                    
+                ]
+                
+             },
+        
+             "UK":{
+                "exception":
+                [
+                    "Never give equipment build trigger.",
+                    "BDWPLAN cease always push to CSP.",
+	                "For 10 G EOF IP will be assign by IN team and for 1 G CSP will take care.",
+	                "Never trigger for POP for site WI.",
+	                "As per review notes, if TVT / 3rd party longlining then push it to CSP else trigger others / DC cross connect in BDWPLAN.",
+	                "Never set site visit at provision pop.",
+	                "Dark fibre planning CSP will take care."
+
+                ],
+                "delivery_address":[
+                    
+                ]
+            },
+        
+             "Denmark":{
+                "exception":
+                [
+                    "Check for OLO I/C details in orders along with other requirements.",
+	                "Route the service if all required details are available.",
+	                "In case all other details are available in CEOS except VLAN then India team will add required Router and Demarc device (wherever applicable) and raise the ERO accordingly.",
+                    "These details will be pasted in diary notes.",
+	                "BDWROUT task will be kept on TD until VLAN is available in CEOS.",
+	                "Once VLAN is available then engineer will complete the planning and sign off the ROUT task.",
+	                "ERO for Cabinet´s, CTP´s and all Presentation Panels and other consumables (Attenuators, brackets etc.) will be order by local team. ERO for all other Equipment will be raised by SSC IN NR Planning Team. OK",
+	                "Norway and Denmark country ERO will be raise at DK planning (for all technology)."
+
+                ],
+                "delivery_address":[
+                    
                 ]
             } 
+        
     },
 
     
