@@ -506,7 +506,7 @@
                 [
                     "Raise ERO of cable as well in case of ULL service.",
 	            "Cease plan internal bearers as well in case of cease planning.",
-	            "BER, MUC ERO in mobile city." 
+	            "BER, MUC ERO in mobile city.",
 	            "Read access info of sites.",
 	            "Add virtual ports of ISG-26R in case of overture NNI.",
 	            "HAM ERO will be raised in DHL Supply.",
