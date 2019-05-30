@@ -22,8 +22,10 @@
                         "No"
                     ],
                     "Node work":[
-                        "Yes",
-                        "No"
+                        "A-END",
+                        "B-END",
+                        "BOTH",
+                        "NA"
                     ],
                     "Order Eligible for EED (Ethernet Express Delivery)":[
                         "Yes",
@@ -62,6 +64,52 @@
                         "Yes",
                         "No"
                     ],
+                    "IP address assigned":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Equip Build":[
+                        "A-END",
+                        "B-END",
+                        "BOTH",
+                        "NA"
+                    ],
+                     "Carrier Hotel/TVT Site involved":[
+                        "A-END",
+                        "B-END",
+                        "BOTH",
+                        "NA"
+                    ],
+                    "LPD Setting":[
+                        "A-END",
+                        "B-END",
+                        "BOTH",
+                        "NA"
+                    ],
+                    "Resiliency/Relationship defined":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Test Method Updated (Y.1564/ASPEN/OTHER)":[
+                        "Yes",
+                        "No"
+                    ],
+                    "OLO NNI bandwidth updated":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Diversity / Resiliency Required":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Relationship Added":[
+                        "Yes",
+                        "No"
+                    ],
+                    "Port Status/Port Access ID Updated":[
+                        "Yes",
+                        "No"
+                    ]
                 }
             },
             "Cease":{
