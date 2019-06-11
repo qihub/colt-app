@@ -21,16 +21,15 @@ $(document).ready(function(){
 
 function fetch_data(){
     
-    $.ajax({
+    var result = $.ajax({
         url: 'data/'+data_path,
         type: 'get',
         async: false,
-        success: function(data) {
-            result = data;
-        } 
+         
      });
 
-     data_file      =   result;
+    console.log(result);
+     data_file      =   JSON.parse(result.responseText);
 
 
     return data_file;
