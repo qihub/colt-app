@@ -56,7 +56,7 @@ $(document).on('change','#queue_type', function(){
         template_options  =  template_data[key]; 
         
         for(var option in template_options){
-            input_form        = input_form + "<input data-template-name='"+key+"' onChange='generate_template(this)' class='template_option template' type='radio' name='template_option_"+t_count+"' value='" +template_options[option]+ "'> "+template_options[option]+" ";
+            input_form        = input_form + "<input data-template-name='"+key+"' class='template_option template' type='radio' name='template_option_"+t_count+"' value='" +template_options[option]+ "'> "+template_options[option]+" ";
             
         }
         
@@ -67,9 +67,28 @@ $(document).on('change','#queue_type', function(){
     }
     $('.validate_template').removeClass('d-none');
     
+    
 
 });
 
+function compile_template(){
+    
+    $('#final_template').val('');
+    template_val    =   '';
+    $('#templates .form-group').each(function(index, element){
+        opt_label = $(this).children('label').text()
+        opt_val = $(this).children('input:checked').val();
+        single_template =   opt_label+'\n'+opt_val+'\n';
+        if(!opt_val || opt_val===null){
+            
+            single_template =   '';
+        }
+        
+        template_val = template_val+single_template;
+        $('#final_template').val(template_val);
+    });
+
+}
 
 $(document).on('click','.template_clear', function(){
 
@@ -247,6 +266,7 @@ function generate_template(element, target='final_template'){
 $(document).on('click','.validate_template',function(){
 
     $('.copy_section').removeClass('d-none');
+    compile_template();
 
 });
 
@@ -323,7 +343,7 @@ function fetch_ero_code(){
     for(var key in ero_list){
         
         tech_data   =   tech_data+
-                            "<input type='checkbox' name='ero_list' onclick='write_ero(this)' class='ero_checklist' value='"
+                            "<input type='checkbox' name='ero_list' class='ero_checklist' value='"
                             +ero_list[key]
                             +"'> "
                             +ero_list[ero_count]+"<br>";
@@ -336,9 +356,9 @@ function fetch_ero_code(){
 }
 
 function write_ero(element){
-    selected_ero_type   =   $(element).val();
-    tech_ero_value      =   $('#technology_ero').val();
-    $('#technology_ero').val(tech_ero_value+selected_ero_type+', ');
+    // selected_ero_type   =   $(element).val();
+    // tech_ero_value      =   $('#technology_ero').val();
+    // $('#technology_ero').val(tech_ero_value+selected_ero_type+', ');
 
 }
 
@@ -398,6 +418,17 @@ function load_contacts(){
 function validate_tech(){
    
     $('.technology_validate').removeClass('d-none');
+    $('#technology_ero').val('');
+    technologies = $('#technologies').val('');
+    ero_type    =   $('#ero_type').val();
+    generated_ero_id =  $('#ero_generated_id').val();
+    checked_item    =   '';
+    $('.ero_checklist:checked').each(function(){
+        checked_item = checked_item+', '+$(this).val()
+    });
+
+    tech_data   =   ero_type+":"+checked_item+"\nERO ID: "+generated_ero_id;
+    $('#technology_ero').val(tech_data);
     
 }
 
@@ -429,9 +460,9 @@ $('.technology_validate').click(function(){
     }
 
     $('#ero_generated_id').val('');
-    $('#technology_ero').val(selected_eros+'\n ERO ID: ' + ero_generated_id);
-    technology_value    =   $('#technology_ero').val();
-    $('#final_template').append('\n' + technology_value+'\n');
+    //$('#technology_ero').val(selected_eros+'\n ERO ID: ' + ero_generated_id);
+    //technology_value    =   $('#technology_ero').val();
+    //$('#final_template').append('\n' + technology_value+'\n');
     $('.tech_validate').removeClass('d-none');
     $('.ero_checklist').prop('checked', false);
 
