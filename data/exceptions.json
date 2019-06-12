@@ -866,7 +866,15 @@
         "A-END",
         "B-END",
         "Transit"
-    ]
+    ],
+
+    "links":
+    {
+        "link text":"http://example.com/link1",
+        "link text 2":"http://example.com/link2"
+    }
+
+    
 
 
     
