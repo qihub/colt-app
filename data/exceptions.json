@@ -973,7 +973,7 @@
 	    "3rd Party Installers / Telent - PTLISCMFieldServices@colt.net"
 	    "Schedulers - CCEOSDPTInstallationsSchedulers@colt.net"
 	],
-	"UK":[
+	"UK/IE":[
             "CSP - ISUB&TSTANDARDUKCSPESCALATIONS@colt.net"
 	    "Node - CCEO-SD-UKNodeOperations@colt.net"
 	    "Fibre - CCEO-SD-UK-FibrePlanning@colt.net"
@@ -983,10 +983,20 @@
 	    "OLO Delivery - OLO Delivery1 - UK"
 	    "3rd Party Installers / Telent - CCEO-SD-UKInstallationTeamLeaders@colt.net"
 	    "Schedulers - CCEO-SD-UKSchedulers@colt.net"
+	    "IE/CSP - David.Palmer@colt.net"
+	    "IE/Coop - CCEO-SD-UK OPS BWDC Co-Op & Config"
+	    "IE/OLO Delivery - OLO Delivery Eire <OLODelivery-Eire@colt.net>"
+	    "IE/Routing / Planning Team -IRL PLANNING"
 	],
 	"DK":[
             "OLO Delivery - Denmark"
 	    "Hansen, Anne Marie <AnneMarie.Hansen@colt.net>"
+	    "SD SSC BWDC Planning DK"
+	],
+	"AT":[
+            "OLO Delivery - Austria"
+	    "SD SSC BWDC Config AT"
+	    "SD SSC BWDC Planning AT"
 	],
         "USA":[
             "Colaiocco, Nico <Nico.Colaiocco@colt.net>"
