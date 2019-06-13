@@ -932,8 +932,14 @@
 	"SE":[
             "Fibre - SE Stockholm Network & Installation <SEFibre@colt.net>"
 	],
-	    "Italy":[
-            "Alok.mam@colt.net"
+	    "BE":[
+            "CSP - BE OPS CSP <BEOPSCSP@colt.net>"
+	    "Node - BE OPS Field & Node <BEOPSField&Node@colt.net>"
+	    "Fibre - BE OPS CSP <BEOPSCSP@colt.net>"
+	    "Coop - SD SSC BWDC Config BE <SDSSCBWDCConfigBE@colt.net>"
+	    "Workshop/Stores - be ops central planning beopscentralplan@colt.net"
+	    "Order Management - BE Ops Order Management & SD Coordination <BEOpsOrderManagement&SDCoordination@colt.net>"
+	    "OLO Delivery - #BE DSL&OLO bedslolo@colt.net"
 	],
 	    "Italy":[
             "Alok.mam@colt.net"
