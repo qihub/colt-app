@@ -854,7 +854,7 @@
   },
     
     "contact_list":{
-        "France":[
+        "FR":[
             "CSP-  FR LOCAL PLANNING TI <FRLOCALPLANNINGTI@colt.net>"
 	    "Node- FRNode@colt.net"
 	    "Fibre-FR_Fibre_Contact"
@@ -865,20 +865,33 @@
 	    "3rd Party Installers / Telent-FRCoordinationROF@colt.net"
 	    "Schedulers-FRCoordinationROF@colt.net"
         ],
-	"Italy":[
-            "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
+	"DE":[
+            "CSP - ExternalOperationsProduction@colt.net"
+	    "Dusseldorf - O&T SD Node Inst DUS <O&TSDNodeInstDUS@colt.net>"
+	    "Frankfurt - O&T SD Node Inst FRA <o&tsdnodeinstfra@colt.net>"
+	    "Hannover - O&T SD Node Inst HAJ <O&TSDNodeInstHAJ@colt.net>"
+	    "ABerlin - O&T SD Node Inst BER <O&TSDNodeInstBER@colt.net>"
+	    "Stuttgart - O&T SD Node Inst STR <O&TSDNodeInstSTR@colt.net>"
+	    "Munich - O&T SD Node Inst MUC <O&TSDNodeInstMUC@colt.net>"
+	    "Hamburg - O&T SD Node Inst HAM <O&TSDNodeInstHAM@colt.net>"
+	    "Fibre - ExternalOperationsProduction@colt.net"
+	    "Coop - O&T SD NCC Teamleitung DE(DENCCTeamleitung@colt.net)"
+	    "Workshop/Stores - GERLogistikFrankfurt@colt.net"
+	    "Order Management - SD DE CSD Mgmt <SDDECSDMgmt@colt.net>"
+	    "OLO Delivery - OLODeliveryGermany3@colt.net"
+            "Schedulers - O&TSDOrderControlGermany@colt.net"
         ],
 	"Italy":[
             "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
 	],
 	"Italy":[
             "Alok.mam@colt.net"
