@@ -881,23 +881,43 @@
 	    "OLO Delivery - OLODeliveryGermany3@colt.net"
             "Schedulers - O&TSDOrderControlGermany@colt.net"
         ],
-	"Italy":[
-            "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
+	"CH":[
+            "CSP Planning - CH NWS Planning <CHNWSPlanning@colt.net>"
+	    "Basel node - CH NWS Field ZRH <CHNWSFieldZRH@colt.net>"
+	    "Geneva node - CH NWS Field GVA <CHNWSFieldGVA@colt.net>"
+	    "Zurich node - CH NWS Field ZRH <CHNWSFieldZRH@colt.net>"
+	    "fiber - CH NWS EO All <CHNWSEOAll@colt.net>"
+	    "coop - chcoop@colt.net"
+	    "Workshop/Stores - DE Logistik Frankfurt <GERLogistikFrankfurt@colt.net>"
+	    "Order Management - IntercityServiceDelivery-CHE@colt.net"
+	    "OLO Delivery - CH OffNet Delivery <CHOffNetDelivery@colt.net>"
+	    "3rd Party Installers / Telent - Geneva and french part:CH NWS Field GVA <CHNWSFieldGVA@colt.net>"
+	    "3rd Party Installers / Telent - Rest of CH:CH OPS Field ZRH FLM <ChOpsFieldZrhFlm@colt.net>"
+	    "Schedulers - CH OPS Dispatcher <CHOPSDispatcher@colt.net>"
 	],
 	"Italy":[
             "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net
 	],
 	"Italy":[
             "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net"
+	    "Alok.mam@colt.net
 	],
 	"Italy":[
             "Alok.mam@colt.net"
