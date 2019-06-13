@@ -917,17 +917,17 @@
 	    "Schedulers - O&T SD I&M Trn <ITOperationsTurin@colt.net>"
 	    "Routing - SD SSC BWDC Planning IT"
 	],
-	"Italy":[
-            "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
+	"NL":[
+            "CSP - SDNLProvisioning@colt.net"
+	    "Node - SDINFRASTRUCTUREIMPLEMENTATIONTSPNORTH@colt.net"
+	    "Node - SDINFRASTRUCTUREIMPLEMENTATIONTSPCENTRAL@colt.net"
+	    "Node - SDINFRASTRUCTUREIMPLEMENTATIONTSPSOUTH@colt.net"
+	    "Fibre - NLExternalOperations@colt.net"
+	    "Coop - SDNLConfigurations@colt.net"
+	    "OLO Delivery - NLCS-OM@colt.net"
+	    "Workshop/Stores - NLWorkshop@colt.net"
+	    "Order Management - NLCS-OM@colt.net"
+	    "Schedulers - NLScheduling@colt.net"
 	],
 	"SE":[
             "Fibre - SE Stockholm Network & Installation <SEFibre@colt.net>"
