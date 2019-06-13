@@ -896,16 +896,26 @@
 	    "Schedulers - CH OPS Dispatcher <CHOPSDispatcher@colt.net>"
 	],
 	"Italy":[
-            "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net
+            "CSP - O&T SD I&M Mil <ITFieldServicesMilan@colt.net>"
+	    "CSP - O&T SD I&M Rom <ITOperationsRome@colt.net>"
+	    "CSP - O&T SD I&M Trn <ITOperationsTurin@colt.net>"
+	    "Node - O&T SD I&M Mil <ITFieldServicesMilan@colt.net>"
+	    "Node - O&T SD I&M Rom <ITOperationsRome@colt.net>"
+	    "Node - O&T SD I&M Trn <ITOperationsTurin@colt.net>"
+	    "Fibre - O&T SD I&M Mil <ITFieldServicesMilan@colt.net>"
+	    "Fibre - O&T SD I&M Rom <ITOperationsRome@colt.net>"
+	    "Fibre - O&T SD I&M Trn <ITOperationsTurin@colt.net>"
+	    "Coop - SD SSC BWDC Config IT <SDSSCBWDCConfigIT@colt.net>"
+	    "Workshop/Stores - O&T SD I&M Mil <ITFieldServicesMilan@colt.net>"
+	    "Workshop/Stores - O&T SD I&M Rom <ITOperationsRome@colt.net>"
+	    "Workshop/Stores - O&T SD I&M Trn <ITOperationsTurin@colt.net>"
+	    "Order Management - IT Order Management <ITOrderManagement@colt.net>"
+	    "OLO Delivery - Italy <OLODelivery-Italy@colt.net>"
+	    "3rd Party Installers / Telent - Martulli, Michele<Michele.Martulli@colt.net>"
+	    "Schedulers - O&T SD I&M Mil <ITFieldServicesMilan@colt.net>"
+	    "Schedulers - O&T SD I&M Rom <ITOperationsRome@colt.net>"
+	    "Schedulers - O&T SD I&M Trn <ITOperationsTurin@colt.net>"
+	    "Routing - SD SSC BWDC Planning IT"
 	],
 	"Italy":[
             "Alok.mam@colt.net"
@@ -917,9 +927,15 @@
 	    "Alok.mam@colt.net"
 	    "Alok.mam@colt.net"
 	    "Alok.mam@colt.net"
-	    "Alok.mam@colt.net
+	    "Alok.mam@colt.net"
 	],
-	"Italy":[
+	"SE":[
+            "Fibre - SE Stockholm Network & Installation <SEFibre@colt.net>"
+	],
+	    "Italy":[
+            "Alok.mam@colt.net"
+	],
+	    "Italy":[
             "Alok.mam@colt.net"
 	],
         "USA":[
